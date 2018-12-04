@@ -1,0 +1,13 @@
+{
+    "name": "PionerasWorld",
+    "version": "0.0.0",
+    "private": true,
+    "requires": true,
+    "scripts": {
+        "start": "./node_modules/.bin/sass --watch ./:./ & ./node_modules/.bin/live-server"
+    },
+    "dependencies": {
+        "live-server": "^1.2.0",
+        "sass": "^1.14.3"
+    }
+}
