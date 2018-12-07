@@ -11,10 +11,10 @@
     display: inline-block;
 
 }
-.container .email ,.password{
+.container input{
     border-color: rgba(131, 96, 223,.3);
     font-size: 22px;
-    width: 90%; 
+    width: 75%; 
     padding: 15px;
     margin: 10px 10px;
 }
@@ -26,6 +26,5 @@
     padding: 5px 23px;
     margin: 5px 10px;
     border-radius: 12px;
-    position: relative;
-    left: 156px;
+  
 }
