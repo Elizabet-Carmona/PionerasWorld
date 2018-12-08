@@ -27,31 +27,57 @@ body.intro {
     padding: 0;
     margin: 0;
     .container {
+        position: absolute;
+        top: 80px;
+        bottom: 0;
+        right: 0;
+        left: 0;
         background: #f2f2f2;
-        width: 25%;
         font-size: 22px;
         font-family: Gotham Rounded;
         color: #695F98;
-        margin: auto 20px;
+        margin: 0 auto;
         border-radius: 20px;
         text-align: center;
         padding: 1.5%;
-        display: inline-block;
+        width: 400px;
+        height: 350px;
+        z-index: 3;
+        background-color: #fff;
+        @media (max-width: 600px) {
+            width: 300px;
+            height: 400px;
+        }
+        h2 {
+            font-family: 'GothamRounded-Bold';
+            color: #332572;
+            font-size: 24px;
+        }
         input {
-            border-color: rgba(131, 96, 223, .3);
+            border: 1.5px solid #a989cb;
             font-size: 22px;
-            width: 75%;
+            width: 85%;
             padding: 15px;
             margin: 10px 10px;
+            font-family: 'GothamRounded-Book';
+            color: #bcbcb8;
         }
         .boton {
-            background: #60DFB7;
+            background: #00ffc2;
             font-family: Gotham Rounded;
-            color: #695F98;
+            color: #332572;
             font-size: 22px;
             padding: 5px 23px;
             margin: 5px 10px;
             border-radius: 12px;
+            font-family: 'GothamRounded-Bold';
+            border: none;
+        }
+        h4 {
+            color: #332572;
+        }
+        a {
+            color: #332572;
         }
     }
     .info-intro {
@@ -86,8 +112,7 @@ body.intro {
         span {
             font-family: 'GothamRounded-Bold', Sans-Serif;
         }
-
-        .info-text{
+        .info-text {
             max-width: 500px;
             margin: 0 10px;
         }
