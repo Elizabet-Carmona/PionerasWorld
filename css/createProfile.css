@@ -9,7 +9,7 @@ body {
 body .contain {
   width: 100%;
   height: 100%;
-  margin: auto;
+  margin: 25px auto;
   padding: 2%;
   text-align: center;
 }
@@ -50,6 +50,12 @@ body .contain .box .information form table .fila .space {
 }
 body .contain .box .information form .radio {
   padding: 10px;
+  margin: 2em;
+  text-align: left;
+}
+body .contain .box .information form label:checked {
+  color: #48387c;
+  background-color: #48387c;
 }
 body .contain .box .avatar {
   display: inline-block;
