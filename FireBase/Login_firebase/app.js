@@ -1,10 +1,42 @@
+  var config = {
+    apiKey: "AIzaSyCCq78qK3CVV4FsM7v9py5YXg54fRqYAl0",
+    authDomain: "pionerasworld.firebaseapp.com",
+    databaseURL: "https://pionerasworld.firebaseio.com",
+    projectId: "pionerasworld",
+    storageBucket: "pionerasworld.appspot.com",
+    messagingSenderId: "9860997148"
+  };
+  
+  var app =firebase.initializeApp(config);
+
+// Initialize Cloud Firestore through Firebase
+var db = firebase.firestore(app);
 //Registrarse
 function registrar(){
+    var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
     var contrasena = document.getElementById('contrasena').value;
+    var country = document.getElementById('country').value;
+    var language = document.getElementById('language').value;
 
     firebase.auth().createUserWithEmailAndPassword(email, contrasena)
     .then(function(){
+      //datos de los usuarios al registrarse
+    db.collection("users").add({
+          name: name,
+          email: email,
+          pass: contrasena,
+          country: country,
+          language: language
+          //img : url()
+      })
+      .then(function(docRef) {
+          console.log("Document written with ID: ", docRef.id);
+      })
+      .catch(function(error) {
+          console.error("Error adding document: ", error);
+      });
+
         verficar()
     })
     
@@ -17,6 +49,7 @@ function registrar(){
         // ...
       });
 }
+
 //iniciar sesion
 function ingreso(){
     
@@ -33,6 +66,8 @@ function ingreso(){
         console.log(errorMessage);
         // ...
       });
+
+
 }
 //verificar que el usuario exista
 function observador(){
@@ -67,6 +102,7 @@ observador();
 function aparece(user){
     var user = user;
     var contenido = document.getElementById('contenido');
+    //si el correo esta verificado
     if(user.emailVerified){
         contenido.innerHTML = `
         <p>Bienvenido!</p>

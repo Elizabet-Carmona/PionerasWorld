@@ -23,4 +23,134 @@
   font-size: 24px;
 }
 
+body.world-page {
+  box-sizing: border-box;
+  background-color: #48387c;
+  margin: 0;
+  padding: 0;
+}
+
+.container-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 20px 10px 20px;
+}
+.container-menu .logo-world {
+  width: 200px;
+}
+
+.menu ul li {
+  list-style: none;
+  color: #fff;
+  font-family: "GothamRounded-Bold", Sans-Serif;
+  font-size: 24px;
+  display: inline;
+  padding: 20px;
+}
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+.menu a:hover {
+  color: #a989cb;
+  text-decoration: line-through;
+}
+
+.mask {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0;
+  padding: 3px, 3px;
+}
+
+.container-plane {
+  position: relative;
+  margin: 0 auto;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  flex-wrap: wrap;
+}
+.container-plane .plane {
+  position: relative;
+  width: 270px;
+  height: auto;
+  padding-left: 40px;
+  animation: 3s volar ease-in-out infinite;
+}
+@keyframes volar {
+  0% {
+    top: 10%;
+  }
+  50% {
+    top: 35%;
+  }
+  100% {
+    top: 10%;
+  }
+}
+.container-plane .plane .letter {
+  width: 30px;
+}
+.container-plane .plane .letter .l1 {
+  width: 30px;
+}
+.container-plane .plane .letter .l2 {
+  width: 28px;
+}
+.container-plane .plane .letter .l3 {
+  width: 25px;
+}
+.container-plane .plane .letter .l4 {
+  width: 20px;
+}
+.container-plane button.meet {
+  position: absolute;
+  right: 0;
+  background-color: #00ffc2;
+  border: none;
+  font-size: 30px;
+  font-family: "GothamRounded-Bold", Sans-Serif;
+  height: 75px;
+  width: 260px;
+  border-radius: 30px;
+  color: #48387c;
+  cursor: pointer;
+}
+.container-plane button.meet:hover {
+  background-color: #fe8cab;
+  color: #fff;
+}
+
+.world {
+  position: absolute;
+  top: 170px;
+  right: 0;
+  left: 0;
+  -webkit-animation: 3s rotate linear infinite;
+  animation: 100s rotate linear infinite;
+  transition: all 0.5s ease-in;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
