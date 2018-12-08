@@ -225,6 +225,63 @@ body.world-page {
   color: #fff;
 }
 
+.container-map {
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+.container-map .map {
+  display: block;
+  width: 60px;
+  margin: 0 auto;
+  z-index: 3;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  left: 0;
+  transform: rotate(2deg);
+  animation: 3s aparecer ease-out infinite;
+}
+@keyframes aparecer {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  30% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+.container-map .map2 {
+  width: 60px;
+  z-index: 3;
+  position: absolute;
+  right: -30px;
+  transform: rotate(15deg);
+  bottom: 100px;
+  top: 100px;
+  animation: 3s aparecer2 ease-out infinite;
+}
+@keyframes aparecer2 {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  40% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
 .world {
   position: absolute;
   top: 170px;

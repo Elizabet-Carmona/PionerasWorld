@@ -18,7 +18,7 @@ $morado-letra-boton: #241c3e;
     font-style: normal;
 }
 
-.container{
+.container {
     background: #f2f2f2;
     width: 25%;
     font-size: 22px;
@@ -29,16 +29,17 @@ $morado-letra-boton: #241c3e;
     text-align: center;
     padding: 1.5%;
     display: inline-block;
-
 }
-.container input{
-    border-color: rgba(131, 96, 223,.3);
+
+.container input {
+    border-color: rgba(131, 96, 223, .3);
     font-size: 22px;
-    width: 75%; 
+    width: 75%;
     padding: 15px;
     margin: 10px 10px;
 }
-.container .boton{
+
+.container .boton {
     background: #60DFB7;
     font-family: Gotham Rounded;
     color: #695F98;
@@ -46,7 +47,6 @@ $morado-letra-boton: #241c3e;
     padding: 5px 23px;
     margin: 5px 10px;
     border-radius: 12px;
-  
 }
 
 .title {
@@ -233,6 +233,63 @@ body.world-page {
         &:hover {
             background-color: #fe8cab;
             color: #fff;
+        }
+    }
+}
+
+.container-map {
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    .map {
+        display: block;
+        width: 60px;
+        margin: 0 auto;
+        z-index: 3;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        left: 0;
+        transform: rotate(2deg);
+        animation: 3s aparecer ease-out infinite;
+                @keyframes aparecer {
+                    0% {
+                        display: none;
+                        opacity: 0;
+                    }
+                    30% {
+                        display: block;
+                        opacity: 0;
+                    }
+                    100% {
+                        display: block;
+                        opacity: 1;
+                    }
+                }
+    }
+    .map2 {
+        width: 60px;
+        z-index: 3;
+        position: absolute;
+        right: -30px;
+        transform: rotate(15deg);
+        bottom: 100px;
+        top: 100px;
+        animation: 3s aparecer2 ease-out infinite;
+        @keyframes aparecer2 {
+            0% {
+                display: none;
+                opacity: 0;
+            }
+            40% {
+                display: block;
+                opacity: 0;
+            }
+            100% {
+                display: block;
+                opacity: 1;
+            }
         }
     }
 }
