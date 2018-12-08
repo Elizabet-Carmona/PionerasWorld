@@ -60,17 +60,29 @@ body.world-page {
   display: flex;
   justify-content: space-between;
   z-index: 2;
+  flex-wrap: wrap;
 }
 .container-plane .plane {
+  position: relative;
   width: 270px;
   height: auto;
   padding-left: 40px;
+  animation: 3s volar ease-in-out infinite;
 }
-.container-plane .plane:hover {
-  transform: translateY(-30px);
-  transition: all 0.5s ease-in;
+@keyframes volar {
+  0% {
+    top: 10%;
+  }
+  50% {
+    top: 35%;
+  }
+  100% {
+    top: 10%;
+  }
 }
 .container-plane button.meet {
+  position: absolute;
+  right: 0;
   background-color: #00ffc2;
   border: none;
   font-size: 30px;
