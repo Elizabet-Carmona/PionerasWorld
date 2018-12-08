@@ -35,38 +35,74 @@ body.world-page {
     background-color: #48387c;
 }
 
-.container-world{
+.container-world {
     max-width: 1200px;
 }
+
 .container-menu {
     display: flex;
     justify-content: space-between;
     margin: 30px 20px 10px 20px;
-
     .logo-world {
-        width: 150px;
+        width: 200px;
     }
 }
 
 .menu {
-  ul  li {
+    ul li {
         list-style: none;
         color: #fff;
         font-family: 'GothamRounded-Bold', Sans-Serif;
-        font-size: 20px;
+        font-size: 24px;
         display: inline;
         padding: 20px;
+        &:hover {
+            color: #a989cb;
+            text-decoration: line-through;
         }
-    ul li:hover {
-        color: #a989cb;
-        text-decoration: line-through;
+    }
+    
+}
+
+.container-plane {
+   position: relative;
+   margin: 0 auto;
+   max-width: 900px;
+   display: flex;
+   justify-content: space-between;
+   z-index: 2;
+    .plane {
+        width: 270px;
+        height: auto;
+        padding-left: 40px;
+        &:hover{
+            transform: translateY(-30px);
+            transition: all 0.5s ease-in;
+            
+        }
+    }
+    button.meet {
+        background-color: #00ffc2;
+        border: none;
+        font-size: 30px;
+        font-family: 'GothamRounded-Bold', Sans-Serif;
+        height: 75px;
+        width: 260px;
+        border-radius: 30px;
+        color:#48387c;
+        &:hover{
+            background-color: #fe8cab;
+            color: #fff;
+        }
     }
 }
 
-.world{
-    max-width: 1100px;
-    margin: 0 auto;
+.world {
+    position: absolute;
     overflow: hidden;
+    top:170px;
+    right: 0;
+    left: 0;
     -webkit-animation: 3s rotate linear infinite;
     animation: 100s rotate linear infinite;
     transition: all 0.5s ease-in;
@@ -74,7 +110,20 @@ body.world-page {
     transform-origin: 50% 50%;
 }
 
-@keyframes rotate {from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}}
-@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
-  to {-webkit-transform: rotate(360deg);}}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
