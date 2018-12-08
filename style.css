@@ -1,3 +1,4 @@
+/* estilos generales */
 @font-face {
   font-family: "GothamRounded-Bold";
   src: url("font/original_GothamRoundedBold.eot?#iefix") format("embedded-opentype"), url("font/original_GothamRoundedBold.woff") format("woff"), url("font/original_GothamRoundedBold.ttf") format("truetype"), url("font/original_GothamRoundedBold.svg") format("svg");
@@ -10,7 +11,13 @@
   font-weight: normal;
   font-style: normal;
 }
-.container {
+/* estilos de index*/
+body.intro {
+  background-color: #332572;
+  padding: 0;
+  margin: 0;
+}
+body.intro .container {
   background: #f2f2f2;
   width: 25%;
   font-size: 22px;
@@ -22,16 +29,14 @@
   padding: 1.5%;
   display: inline-block;
 }
-
-.container input {
+body.intro .container input {
   border-color: rgba(131, 96, 223, 0.3);
   font-size: 22px;
   width: 75%;
   padding: 15px;
   margin: 10px 10px;
 }
-
-.container .boton {
+body.intro .container .boton {
   background: #60DFB7;
   font-family: Gotham Rounded;
   color: #695F98;
@@ -40,7 +45,48 @@
   margin: 5px 10px;
   border-radius: 12px;
 }
+body.intro .info-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 20px;
+}
+@media (max-width: 850px) {
+  body.intro .info-intro {
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: 130px;
+  }
+}
+body.intro .info-intro img {
+  width: 400px;
+  max-width: 90%;
+  height: auto;
+}
+body.intro .info-intro p {
+  font-size: 32px;
+  color: #fff;
+  font-family: "GothamRounded-Book", Sans-Serif;
+}
+@media (max-width: 850px) {
+  body.intro .info-intro p {
+    font-size: 18px;
+  }
+}
+body.intro .info-intro span {
+  font-family: "GothamRounded-Bold", Sans-Serif;
+}
+body.intro .info-intro .info-text {
+  max-width: 500px;
+  margin: 0 10px;
+}
 
+/* ejemplo letra*/
 .title {
   font-family: "GothamRounded-Bold", Sans-Serif;
   font-size: 24px;
@@ -54,23 +100,22 @@
   font-size: 24px;
 }
 
+/* estilos de world */
 body.world-page {
   box-sizing: border-box;
   background-color: #48387c;
   margin: 0;
   padding: 0;
 }
-
-.container-menu {
+body.world-page .container-menu {
   display: flex;
   justify-content: space-between;
   margin: 30px 20px 10px 20px;
 }
-.container-menu .logo-world {
+body.world-page .container-menu .logo-world {
   width: 200px;
 }
-
-.menu ul li {
+body.world-page .menu ul li {
   list-style: none;
   color: #fff;
   font-family: "GothamRounded-Bold", Sans-Serif;
@@ -78,16 +123,15 @@ body.world-page {
   display: inline;
   padding: 20px;
 }
-.menu a {
+body.world-page .menu a {
   text-decoration: none;
   color: #fff;
 }
-.menu a:hover {
+body.world-page .menu a:hover {
   color: #a989cb;
   text-decoration: line-through;
 }
-
-.mask {
+body.world-page .mask {
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -95,8 +139,7 @@ body.world-page {
   margin: 0;
   padding: 3px, 3px;
 }
-
-.container-plane {
+body.world-page .container-plane {
   position: relative;
   margin: 0 auto;
   max-width: 900px;
@@ -105,7 +148,7 @@ body.world-page {
   z-index: 2;
   flex-wrap: wrap;
 }
-.container-plane .plane {
+body.world-page .container-plane .plane {
   position: relative;
   width: 270px;
   height: auto;
@@ -123,10 +166,10 @@ body.world-page {
     top: 10%;
   }
 }
-.container-plane .plane .letter {
+body.world-page .container-plane .plane .letter {
   width: 30px;
 }
-.container-plane .plane .letter .l1 {
+body.world-page .container-plane .plane .letter .l1 {
   display: block;
   width: 30px;
   transform: rotate(-10deg);
@@ -147,7 +190,7 @@ body.world-page {
     opacity: 1;
   }
 }
-.container-plane .plane .letter .l2 {
+body.world-page .container-plane .plane .letter .l2 {
   width: 28px;
   transform: rotate(-30deg);
   margin: 0 0 15px -5px;
@@ -167,7 +210,7 @@ body.world-page {
     opacity: 1;
   }
 }
-.container-plane .plane .letter .l3 {
+body.world-page .container-plane .plane .letter .l3 {
   width: 25px;
   transform: rotate(20deg);
   margin: 0 0 15px 10px;
@@ -187,7 +230,7 @@ body.world-page {
     opacity: 1;
   }
 }
-.container-plane .plane .letter .l4 {
+body.world-page .container-plane .plane .letter .l4 {
   width: 20px;
   transform: rotate(60deg);
   margin: 0 0 15px 10px;
@@ -207,7 +250,7 @@ body.world-page {
     opacity: 1;
   }
 }
-.container-plane button.meet {
+body.world-page .container-plane button.meet {
   position: absolute;
   right: 0;
   background-color: #00ffc2;
@@ -220,18 +263,17 @@ body.world-page {
   color: #48387c;
   cursor: pointer;
 }
-.container-plane button.meet:hover {
+body.world-page .container-plane button.meet:hover {
   background-color: #fe8cab;
   color: #fff;
 }
-
-.container-map {
+body.world-page .container-map {
   max-width: 600px;
   height: auto;
   margin: 0 auto;
   position: relative;
 }
-.container-map .map {
+body.world-page .container-map .map {
   display: block;
   width: 60px;
   margin: 0 auto;
@@ -257,7 +299,7 @@ body.world-page {
     opacity: 1;
   }
 }
-.container-map .map2 {
+body.world-page .container-map .map2 {
   width: 60px;
   z-index: 3;
   position: absolute;
@@ -281,8 +323,7 @@ body.world-page {
     opacity: 1;
   }
 }
-
-.world {
+body.world-page .world {
   position: absolute;
   top: 170px;
   right: 0;
