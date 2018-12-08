@@ -1,0 +1,9 @@
+$font:   Gotham Rounded;
+$purple: #48387c;
+body{
+    box-sizing: border-box;
+    padding: 0px;
+    background: $purple;
+    font-family: $font; 
+    text-align: justify;
+}

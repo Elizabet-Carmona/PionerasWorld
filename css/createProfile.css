@@ -1,0 +1,80 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #48387c;
+  color: white;
+  font-family: Gotham Rounded;
+}
+body .contain {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  padding: 2%;
+  text-align: center;
+}
+body .contain h1 {
+  font-size: 50px;
+}
+body .contain .box {
+  width: 85%;
+  margin: auto;
+}
+body .contain .box .information {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 10px;
+  width: 30%;
+}
+body .contain .box .information form {
+  padding: 15px;
+}
+body .contain .box .information form table {
+  font-size: 20px;
+  text-align: left;
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border: none;
+  width: 100%;
+}
+body .contain .box .information form table .fila {
+  margin: 10px;
+}
+body .contain .box .information form table .fila .space {
+  border-radius: 10px;
+  padding: 5px 0px;
+  width: 100%;
+  margin: 5px;
+  height: 1.5em;
+}
+body .contain .box .information form .radio {
+  padding: 10px;
+}
+body .contain .box .avatar {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+body .contain .box .avatar h2 {
+  font-size: 35px;
+  letter-spacing: 0.5px;
+}
+body .contain .box .avatar .img {
+  padding: 15px;
+  border-radius: 20px;
+  width: 200px;
+  background: #f2f2f2;
+  height: 100px;
+  margin: 10px auto;
+}
+body .contain .box .avatar .next {
+  font-size: 20px;
+  color: #48387c;
+  background: #66ffcc;
+  font-family: Gotham Rounded;
+  border-radius: 10px;
+  padding: 3px 20px;
+}
+
+/*# sourceMappingURL=createProfile.css.map */
