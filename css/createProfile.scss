@@ -1,34 +1,33 @@
-$font:   Gotham Rounded;
+$font: Gotham Rounded;
 $purple: #48387c;
-body{
+body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background: $purple;
     color: white;
     font-family: $font;
-
-    .contain{
+    .contain {
         width: 100%;
         height: 100%;
-        margin:25px auto;
+        margin: 25px auto;
         padding: 2%;
         text-align: center;
-        h1{
+        h1 {
             font-size: 50px;
         }
-        .box{
+        .box {
             width: 85%;
-         
             margin: auto;
-            .information{
+            .information {
                 display: inline-block;
                 padding: 10px;
                 margin: 0 10px;
                 width: 30%;
-                form{
+                form {
                     padding: 15px;
-                    table { 
+                    table {
+                        
                         font-size: 20px;
                         text-align: left;
                         display: table;
@@ -36,33 +35,41 @@ body{
                         border-spacing: 2px;
                         border: none;
                         width: 100%;
-                        
-                        .fila{
+
+                        input{
+                            border: none;
+                                box-shadow: none;
+                        }
+                        .fila {
+                            
                             margin: 10px;
-                            .space{
+                            .space {
                                 border-radius: 10px;
                                 padding: 5px 0px;
                                 width: 100%;
                                 margin: 5px;
                                 height: 1.5em;
-                            }  
+                            }
+                            #mySelect {
+                                height: 30px;
+                                border: none;
+                                box-shadow: none;
+                                overflow: hidden;
+                            }
                         }
                     }
-                    .radio{
+                    .radio {
                         padding: 10px;
-                        margin:2em;
+                        margin: 2em;
                         text-align: left;
                     }
-                    label:checked{
+                    label:checked {
                         color: $purple;
                         background-color: $purple;
-
                     }
-                   
-                }   
+                }
             }
-    
-            .avatar{
+            .avatar {
                 display: inline-block;
                 width: 30%;
                 text-align: center;
@@ -70,30 +77,23 @@ body{
                     font-size: 35px;
                     letter-spacing: .5px;
                 }
-                .img{
+                .img {
                     padding: 15px;
                     border-radius: 20px;
                     width: 200px;
                     background: #f2f2f2;
-                    height: 100px; 
+                    height: 100px;
                     margin: 10px auto;
                 }
-                .next{
-                    
+                .next {
                     font-size: 20px;
                     color: $purple;
                     background: #66ffcc;
                     font-family: $font;
                     border-radius: 10px;
-                    padding:3px 20px;       
+                    padding: 3px 20px;
                 }
-    
             }
-
         }
-       
-
-        
-
     }
 }

@@ -38,6 +38,10 @@ body .contain .box .information form table {
   border: none;
   width: 100%;
 }
+body .contain .box .information form table input {
+  border: none;
+  box-shadow: none;
+}
 body .contain .box .information form table .fila {
   margin: 10px;
 }
@@ -47,6 +51,12 @@ body .contain .box .information form table .fila .space {
   width: 100%;
   margin: 5px;
   height: 1.5em;
+}
+body .contain .box .information form table .fila #mySelect {
+  height: 30px;
+  border: none;
+  box-shadow: none;
+  overflow: hidden;
 }
 body .contain .box .information form .radio {
   padding: 10px;
