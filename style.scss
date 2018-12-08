@@ -32,7 +32,10 @@ $morado-letra-boton: #241c3e;
 }
 
 body.world-page {
+    box-sizing: border-box;
     background-color: #48387c;
+    margin: 0;
+    padding: 0;
 }
 
 .container-world {
@@ -61,6 +64,15 @@ body.world-page {
             text-decoration: line-through;
         }
     }
+}
+
+.mask {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    padding: 5px, 5px;
 }
 
 .container-plane {
@@ -109,7 +121,6 @@ body.world-page {
 
 .world {
     position: absolute;
-    overflow: hidden;
     top: 170px;
     right: 0;
     left: 0;
@@ -118,22 +129,20 @@ body.world-page {
     transition: all 0.5s ease-in;
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
     }
-    to {
-        transform: rotate(360deg);
-    }
-}
-
-@-webkit-keyframes rotate {
-    from {
-        -webkit-transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(360deg);
+    @-webkit-keyframes rotate {
+        from {
+            -webkit-transform: rotate(0deg);
+        }
+        to {
+            -webkit-transform: rotate(360deg);
+        }
     }
 }
