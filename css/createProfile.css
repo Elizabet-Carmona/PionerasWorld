@@ -56,7 +56,6 @@ body .contain .box .information form table .fila #mySelect {
   height: 30px;
   border: none;
   box-shadow: none;
-  overflow: hidden;
 }
 body .contain .box .information form .radio {
   padding: 10px;
