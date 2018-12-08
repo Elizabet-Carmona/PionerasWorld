@@ -57,7 +57,6 @@ body.world-page {
         font-size: 24px;
         display: inline;
         padding: 20px;
-        
     }
     a {
         text-decoration: none;
@@ -104,8 +103,27 @@ body.world-page {
             }
         }
         .letter {
-            width: 25px;
-            height: auto;
+            width: 30px;
+            .l1 {
+                
+                width: 30px;
+               
+            }
+            .l2{
+              //  margin-top: -20px;
+                width: 28px;
+             //   margin-left: 40px;
+            }
+            .l3{
+                
+                width: 25px;
+                
+            }
+            .l4{
+                
+                width: 20px;
+                
+            }
         }
     }
     button.meet {

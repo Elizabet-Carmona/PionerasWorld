@@ -93,8 +93,19 @@ body.world-page {
   }
 }
 .container-plane .plane .letter {
+  width: 30px;
+}
+.container-plane .plane .letter .l1 {
+  width: 30px;
+}
+.container-plane .plane .letter .l2 {
+  width: 28px;
+}
+.container-plane .plane .letter .l3 {
   width: 25px;
-  height: auto;
+}
+.container-plane .plane .letter .l4 {
+  width: 20px;
 }
 .container-plane button.meet {
   position: absolute;
