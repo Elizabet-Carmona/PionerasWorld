@@ -96,16 +96,85 @@ body.world-page {
   width: 30px;
 }
 .container-plane .plane .letter .l1 {
+  display: block;
   width: 30px;
+  transform: rotate(-10deg);
+  margin: -15px 0 15px 25px;
+  animation: 2s caer ease-out infinite;
+}
+@keyframes caer {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  30% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
 }
 .container-plane .plane .letter .l2 {
   width: 28px;
+  transform: rotate(-30deg);
+  margin: 0 0 15px -5px;
+  animation: 2s caer2 ease-out infinite;
+}
+@keyframes caer2 {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  45% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
 }
 .container-plane .plane .letter .l3 {
   width: 25px;
+  transform: rotate(20deg);
+  margin: 0 0 15px 10px;
+  animation: 2s caer3 ease-out infinite;
+}
+@keyframes caer3 {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  65% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
 }
 .container-plane .plane .letter .l4 {
   width: 20px;
+  transform: rotate(60deg);
+  margin: 0 0 15px 10px;
+  animation: 2s caer4 ease-out infinite;
+}
+@keyframes caer4 {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  75% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
 }
 .container-plane button.meet {
   position: absolute;
