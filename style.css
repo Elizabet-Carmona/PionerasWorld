@@ -30,10 +30,6 @@ body.world-page {
   padding: 0;
 }
 
-.container-world {
-  max-width: 1200px;
-}
-
 .container-menu {
   display: flex;
   justify-content: space-between;
@@ -51,7 +47,11 @@ body.world-page {
   display: inline;
   padding: 20px;
 }
-.menu ul li:hover {
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+.menu a:hover {
   color: #a989cb;
   text-decoration: line-through;
 }
@@ -62,7 +62,7 @@ body.world-page {
   height: 100%;
   position: absolute;
   margin: 0;
-  padding: 5px, 5px;
+  padding: 3px, 3px;
 }
 
 .container-plane {
@@ -92,6 +92,10 @@ body.world-page {
     top: 10%;
   }
 }
+.container-plane .plane .letter {
+  width: 25px;
+  height: auto;
+}
 .container-plane button.meet {
   position: absolute;
   right: 0;
@@ -103,6 +107,7 @@ body.world-page {
   width: 260px;
   border-radius: 30px;
   color: #48387c;
+  cursor: pointer;
 }
 .container-plane button.meet:hover {
   background-color: #fe8cab;

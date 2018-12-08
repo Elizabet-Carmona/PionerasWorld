@@ -38,15 +38,12 @@ body.world-page {
     padding: 0;
 }
 
-.container-world {
-   
-}
+.container-world {}
 
 .container-menu {
     display: flex;
     justify-content: space-between;
     margin: 30px 20px 10px 20px;
-
     .logo-world {
         width: 200px;
     }
@@ -60,6 +57,11 @@ body.world-page {
         font-size: 24px;
         display: inline;
         padding: 20px;
+        
+    }
+    a {
+        text-decoration: none;
+        color: #fff;
         &:hover {
             color: #a989cb;
             text-decoration: line-through;
@@ -73,7 +75,7 @@ body.world-page {
     height: 100%;
     position: absolute;
     margin: 0;
-    padding: 5px, 5px;
+    padding: 3px, 3px;
 }
 
 .container-plane {
@@ -101,6 +103,10 @@ body.world-page {
                 top: 10%;
             }
         }
+        .letter {
+            width: 25px;
+            height: auto;
+        }
     }
     button.meet {
         position: absolute;
@@ -113,6 +119,7 @@ body.world-page {
         width: 260px;
         border-radius: 30px;
         color: #48387c;
+        cursor: pointer;
         &:hover {
             background-color: #fe8cab;
             color: #fff;
