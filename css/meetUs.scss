@@ -1,0 +1,94 @@
+$purple:  #48387c;
+body{
+    margin: 3%;
+    padding: 1.5%;
+    box-sizing: border-box;
+    background: $purple;
+    color: white;
+   font-family: 'GothamRounded-Book', Sans-Serif;
+
+    .contain{
+
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 20px 10px 20px;
+            .title {
+                padding: 20px;
+                font-family: 'GothamRounded-Bold', Sans-Serif;
+                width: 400px;
+            }
+        }
+        .menu{
+            ul li {
+                list-style: none;
+                color: #fff;
+                font-family: 'GothamRounded-Bold', Sans-Serif;
+                font-size: 30px;
+                letter-spacing: 1px;
+                display: inline-block;
+                padding: 20px;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+                &:hover {
+                    color: #a989cb;
+                    text-decoration: line-through;
+                }
+            }
+        }
+        .main{
+            display: flex;
+            justify-content: space-between;
+            width: 95%;
+            margin: auto;
+            padding: 50px;
+         
+            .meetus{
+                h1{
+                    font-size: 40px;
+                }
+                font-size: 18px;
+
+                text-align: justify;
+                line-height: 1.5em;
+                width: 25%;
+       
+            }
+            .info{
+                display: flex;
+              
+                text-align: center;
+
+                margin: 0px 20px;
+                width: 65%;
+                .photo{
+                    align-self: center;
+                    padding: 20px;
+                    padding-top:0px; 
+                    margin: auto 5px;
+                    .img{
+                        width: 100px;
+                      
+                    }
+                    .text{
+                        text-align: center;
+                        h3{
+                            letter-spacing: 1px;
+                        }
+                        .redes{ 
+                            img{
+                                width: 30px; 
+                            }
+                           
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
