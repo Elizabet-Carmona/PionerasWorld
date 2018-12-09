@@ -9,7 +9,12 @@ body {
 body h1 {
   font-size: 50px;
   text-align: center;
-  margin: 30px, 0 0 0;
+  margin: 100px 0 0 0;
+}
+@media (max-width: 950px) {
+  body h1 {
+    margin: 30px 0 0 0;
+  }
 }
 body .contain {
   max-width: 1000px;
