@@ -10,8 +10,9 @@
 </head>
 
 <body>
+    <h1>Create your profile</h1>
     <div class="contain">
-        <h1>Create your profile</h1>
+
         <div class="box">
             <div class="information">
                 <form method="POST" action="">
@@ -29,26 +30,32 @@
                             <td><input type="text" id="pass" name="pass" class="space"></td>
                         </tr>
                         <tr class="fila">
-                            <td>Country:</td>
-                            <td><select onclick="llenarPaises()" id="mySelect"  name="country" class="space"></select></td>
-                           
+                            <td>Confirm Password:</td>
+                            <td><input type="text" id="pass" name="pass" class="space"></td>
                         </tr>
                         <tr class="fila">
-                            <td>Language:</td>
+                            <td>Country:</td>
+                            <td><select id="mySelect" onClick="llenarPaises()" name="country" class="space">
+
+                                </select></td>
+
+                        </tr>
+                        <tr class="fila">
+                            <td><span>Favorite programming<br> language</span>
+                                :</td>
                             <td> <input type="text" id="language" name="language" class="space"></td>
                         </tr>
                     </table>
-                    <input type="radio" id="radio" class="radio">
+                    <input type="radio" id="radio" class="radio" checked>
                     <label for="radio">I accept <u>terms and conditions</u></label>
                 </form>
             </div>
-            <div class="avatar">
-                <h2>Share your tip</h2>
-                <div class="img">
-                    <img src="" alt="">
-                </div>
-                <a href="/avatar.html"> <button class="next"> next</button></a>
-            </div>
+
+        </div>
+        <div class="tip">
+            <h2>Share your tip</h2>
+            <textarea class="write-tip"></textarea>
+            <button class="next"><a href="/avatar.html"></a><b> next</b></a></button>
         </div>
     </div>
     <script src="js/main.js"></script>

@@ -61,6 +61,9 @@ body.intro {
             margin: 10px 10px;
             font-family: 'GothamRounded-Book';
             color: #bcbcb8;
+            @media (max-width: 600px){
+                width: 80%;
+            }
         }
         .boton {
             background: #00ffc2;
