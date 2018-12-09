@@ -11,6 +11,10 @@
   font-weight: normal;
   font-style: normal;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 8ff5b8051a9e3266649669081ab7727f9d2d9eed
 /* estilos de index*/
 body.intro {
   background-color: #332572;
@@ -166,6 +170,11 @@ body.intro .info-intro .info-text {
 }
 
 /* ejemplo letra*/
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> a7cb712c57ec790f66f3f32e5eef602aaae085a4
+>>>>>>> 8ff5b8051a9e3266649669081ab7727f9d2d9eed
 .title {
   font-family: "GothamRounded-Bold", Sans-Serif;
   font-size: 24px;
