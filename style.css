@@ -1,4 +1,3 @@
-/* estilos generales */
 @font-face {
   font-family: "GothamRounded-Bold";
   src: url("font/original_GothamRoundedBold.eot?#iefix") format("embedded-opentype"), url("font/original_GothamRoundedBold.woff") format("woff"), url("font/original_GothamRoundedBold.ttf") format("truetype"), url("font/original_GothamRoundedBold.svg") format("svg");
@@ -11,6 +10,7 @@
   font-weight: normal;
   font-style: normal;
 }
+<<<<<<< HEAD
 /* estilos de index*/
 body.intro {
   background-color: #332572;
@@ -166,6 +166,8 @@ body.intro .info-intro .info-text {
 }
 
 /* ejemplo letra*/
+=======
+>>>>>>> a7cb712c57ec790f66f3f32e5eef602aaae085a4
 .title {
   font-family: "GothamRounded-Bold", Sans-Serif;
   font-size: 24px;
@@ -179,22 +181,23 @@ body.intro .info-intro .info-text {
   font-size: 24px;
 }
 
-/* estilos de world */
 body.world-page {
   box-sizing: border-box;
   background-color: #48387c;
   margin: 0;
   padding: 0;
 }
-body.world-page .container-menu {
+
+.container-menu {
   display: flex;
   justify-content: space-between;
   margin: 30px 20px 10px 20px;
 }
-body.world-page .container-menu .logo-world {
+.container-menu .logo-world {
   width: 200px;
 }
-body.world-page .menu ul li {
+
+.menu ul li {
   list-style: none;
   color: #fff;
   font-family: "GothamRounded-Bold", Sans-Serif;
@@ -202,15 +205,16 @@ body.world-page .menu ul li {
   display: inline;
   padding: 20px;
 }
-body.world-page .menu a {
+.menu a {
   text-decoration: none;
   color: #fff;
 }
-body.world-page .menu a:hover {
+.menu a:hover {
   color: #a989cb;
   text-decoration: line-through;
 }
-body.world-page .mask {
+
+.mask {
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -218,7 +222,8 @@ body.world-page .mask {
   margin: 0;
   padding: 3px, 3px;
 }
-body.world-page .container-plane {
+
+.container-plane {
   position: relative;
   margin: 0 auto;
   max-width: 900px;
@@ -227,7 +232,7 @@ body.world-page .container-plane {
   z-index: 2;
   flex-wrap: wrap;
 }
-body.world-page .container-plane .plane {
+.container-plane .plane {
   position: relative;
   width: 270px;
   height: auto;
@@ -245,91 +250,22 @@ body.world-page .container-plane .plane {
     top: 10%;
   }
 }
-body.world-page .container-plane .plane .letter {
+.container-plane .plane .letter {
   width: 30px;
 }
-body.world-page .container-plane .plane .letter .l1 {
-  display: block;
+.container-plane .plane .letter .l1 {
   width: 30px;
-  transform: rotate(-10deg);
-  margin: -15px 0 15px 25px;
-  animation: 2s caer ease-out infinite;
 }
-@keyframes caer {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  30% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
-body.world-page .container-plane .plane .letter .l2 {
+.container-plane .plane .letter .l2 {
   width: 28px;
-  transform: rotate(-30deg);
-  margin: 0 0 15px -5px;
-  animation: 2s caer2 ease-out infinite;
 }
-@keyframes caer2 {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  45% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
-body.world-page .container-plane .plane .letter .l3 {
+.container-plane .plane .letter .l3 {
   width: 25px;
-  transform: rotate(20deg);
-  margin: 0 0 15px 10px;
-  animation: 2s caer3 ease-out infinite;
 }
-@keyframes caer3 {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  65% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
-body.world-page .container-plane .plane .letter .l4 {
+.container-plane .plane .letter .l4 {
   width: 20px;
-  transform: rotate(60deg);
-  margin: 0 0 15px 10px;
-  animation: 2s caer4 ease-out infinite;
 }
-@keyframes caer4 {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  75% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
-body.world-page .container-plane button.meet {
+.container-plane button.meet {
   position: absolute;
   right: 0;
   background-color: #00ffc2;
@@ -342,67 +278,12 @@ body.world-page .container-plane button.meet {
   color: #48387c;
   cursor: pointer;
 }
-body.world-page .container-plane button.meet:hover {
+.container-plane button.meet:hover {
   background-color: #fe8cab;
   color: #fff;
 }
-body.world-page .container-map {
-  max-width: 600px;
-  height: auto;
-  margin: 0 auto;
-  position: relative;
-}
-body.world-page .container-map .map {
-  display: block;
-  width: 60px;
-  margin: 0 auto;
-  z-index: 3;
-  position: absolute;
-  top: 5px;
-  right: 0;
-  left: 0;
-  transform: rotate(2deg);
-  animation: 3s aparecer ease-out infinite;
-}
-@keyframes aparecer {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  30% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
-body.world-page .container-map .map2 {
-  width: 60px;
-  z-index: 3;
-  position: absolute;
-  right: -30px;
-  transform: rotate(15deg);
-  bottom: 100px;
-  top: 100px;
-  animation: 3s aparecer2 ease-out infinite;
-}
-@keyframes aparecer2 {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  40% {
-    display: block;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
-body.world-page .world {
+
+.world {
   position: absolute;
   top: 170px;
   right: 0;
