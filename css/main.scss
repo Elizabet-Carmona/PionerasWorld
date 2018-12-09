@@ -1,0 +1,28 @@
+$purple:  #48387c;
+body{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    background: $purple;
+
+    .contain{
+        color: white;
+        margin: 5%;
+        padding: 7%;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+        font-family: 'GothamRounded-Book', Sans-Serif;
+        .logo{
+            img{
+             width: 500px;
+            }
+        }
+        .text{
+            text-align: justify;
+            font-size: 40px;
+            width: 650px;
+            padding: 30px;
+        }
+    }
+}
