@@ -56,6 +56,11 @@ body.intro .container input {
   font-family: "GothamRounded-Book";
   color: #bcbcb8;
 }
+@media (max-width: 600px) {
+  body.intro .container input {
+    width: 80%;
+  }
+}
 body.intro .container .boton {
   background: #00ffc2;
   font-family: Gotham Rounded;
