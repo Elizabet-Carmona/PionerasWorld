@@ -27,6 +27,7 @@ body.intro {
     padding: 0;
     margin: 0;
     .container {
+        display: block;
         position: absolute;
         top: 80px;
         bottom: 0;
@@ -44,6 +45,22 @@ body.intro {
         height: 350px;
         z-index: 3;
         background-color: #fff;
+        animation: 5s desaparecer cubic-bezier(.39,.58,.57,1);
+                    @keyframes desaparecer {
+                        0% {
+                            display: none;
+                            opacity: 0;
+                        }
+                        90% {
+                            display: none;
+                            opacity: 0;
+                        }
+                        100% {
+                            display: block;
+                            opacity: 1;
+                        }
+                    }
+        
         @media (max-width: 600px) {
             width: 300px;
             height: 400px;
@@ -84,6 +101,7 @@ body.intro {
         }
     }
     .info-intro {
+        display: block;
         max-width: 1200px;
         display: flex;
         justify-content: center;
@@ -94,6 +112,7 @@ body.intro {
         right: 0;
         left: 0;
         margin: 0 20px;
+        
         @media (max-width: 850px) {
             flex-wrap: wrap;
             position: relative;
@@ -103,6 +122,18 @@ body.intro {
             width: 400px;
             max-width: 90%;
             height: auto;
+            animation: 1s intro cubic-bezier(.95,.05,.8,.04);
+                    @keyframes intro {
+                        0% {
+                            display: none;
+                            opacity: 0;
+                        }
+                        100% {
+                            display: block;
+                            opacity: 1;
+                        }
+                       
+                    }
         }
         p {
             font-size: 32px;
@@ -118,6 +149,26 @@ body.intro {
         .info-text {
             max-width: 500px;
             margin: 0 10px;
+            animation: 2s bajar cubic-bezier(.46,.03,.52,.96);
+            position: relative;
+            bottom: 0;
+                    @keyframes bajar {
+                        0% {
+                            bottom: 1000px;
+                            opacity: 0;
+                        
+                        }
+                        50% {
+                          bottom: 500px;
+                          opacity: 1;
+                        }
+                        100% {
+                           bottom: 0;
+                           opacity: 1;
+                           
+                        }
+                       
+                    }
         }
     }
 }

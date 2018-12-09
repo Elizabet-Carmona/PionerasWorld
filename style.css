@@ -18,6 +18,7 @@ body.intro {
   margin: 0;
 }
 body.intro .container {
+  display: block;
   position: absolute;
   top: 80px;
   bottom: 0;
@@ -35,6 +36,21 @@ body.intro .container {
   height: 350px;
   z-index: 3;
   background-color: #fff;
+  animation: 5s desaparecer cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+@keyframes desaparecer {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  90% {
+    display: none;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
 }
 @media (max-width: 600px) {
   body.intro .container {
@@ -79,6 +95,7 @@ body.intro .container a {
   color: #332572;
 }
 body.intro .info-intro {
+  display: block;
   max-width: 1200px;
   display: flex;
   justify-content: center;
@@ -101,6 +118,17 @@ body.intro .info-intro img {
   width: 400px;
   max-width: 90%;
   height: auto;
+  animation: 1s intro cubic-bezier(0.95, 0.05, 0.8, 0.04);
+}
+@keyframes intro {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
 }
 body.intro .info-intro p {
   font-size: 32px;
@@ -118,6 +146,23 @@ body.intro .info-intro span {
 body.intro .info-intro .info-text {
   max-width: 500px;
   margin: 0 10px;
+  animation: 2s bajar cubic-bezier(0.46, 0.03, 0.52, 0.96);
+  position: relative;
+  bottom: 0;
+}
+@keyframes bajar {
+  0% {
+    bottom: 1000px;
+    opacity: 0;
+  }
+  50% {
+    bottom: 500px;
+    opacity: 1;
+  }
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
 /* ejemplo letra*/
