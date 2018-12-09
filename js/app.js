@@ -16,7 +16,7 @@ function registrar(){
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
     var contrasena = document.getElementById('contrasena').value;
-    var country = document.getElementById('mySelect').value;
+    var country = document.getElementById('country').value;
     var language = document.getElementById('language').value;
 
     firebase.auth().createUserWithEmailAndPassword(email, contrasena)
