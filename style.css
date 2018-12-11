@@ -15,7 +15,7 @@
 body.intro {
   background-color: #332572;
   padding: 0;
-  margin: 0;
+  max-width: 1200px;
 }
 body.intro .container {
   display: block;
@@ -95,8 +95,6 @@ body.intro .container a {
   color: #332572;
 }
 body.intro .info-intro {
-  display: block;
-  max-width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -329,7 +327,23 @@ body.world-page .container-plane .plane .letter .l4 {
     opacity: 1;
   }
 }
-body.world-page .container-plane button.meet {
+body.world-page .container-plane #pop-up {
+  display: none;
+  position: relative;
+  z-index: 4;
+  background-color: #fff;
+  width: 370px;
+  height: 390px;
+  border-radius: 30px;
+  top: -50px;
+}
+body.world-page .container-plane #pop-up #close {
+  width: 70px;
+  right: -20px;
+  position: absolute;
+  top: -20px;
+}
+body.world-page .container-plane button#meet {
   position: absolute;
   right: 0;
   background-color: #00ffc2;
@@ -342,7 +356,7 @@ body.world-page .container-plane button.meet {
   color: #48387c;
   cursor: pointer;
 }
-body.world-page .container-plane button.meet:hover {
+body.world-page .container-plane button#meet:hover {
   background-color: #fe8cab;
   color: #fff;
 }
@@ -380,7 +394,7 @@ body.world-page .container-map .map {
 }
 body.world-page .container-map .map2 {
   width: 60px;
-  z-index: 3;
+  z-index: 2;
   position: absolute;
   right: -30px;
   transform: rotate(15deg);
@@ -428,6 +442,43 @@ body.world-page .world {
   to {
     -webkit-transform: rotate(360deg);
   }
+}
+
+/* estilos de avatar */
+body.avatar {
+  background-color: #332572;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+body.avatar h1 {
+  color: #fff;
+  font-family: "GothamRounded-Bold", Sans-Serif;
+  font-size: 50px;
+  text-align: center;
+}
+body.avatar .container-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.avatar .your-avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 30px;
+  background-color: #fff;
+  position: relative;
+}
+body.avatar .your-avatar img {
+  width: 50px;
+  position: absolute;
+  left: 12px;
+  bottom: 10px;
+}
+body.avatar .your-avatar #features input {
+  display: none;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

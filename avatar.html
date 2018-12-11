@@ -5,52 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Create Avatar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/css/createProfile.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="/js/main.js"></script>
 </head>
-<body>
-    <div class="contain">
+<body class="avatar">
         <h1>Create your avatar</h1>
+
+    <div class="container-avatar">
         <div> 
-          <div class="descriptions">
-              <a href="#">Faces</a>
-              <a href="#">Eyes</a>
-              <a href="#">Mouth</a>
-              <a href="#">Nose</a>
-              <a href="#">Ears</a>
-              <a href="#">Hair</a>
-              <a href="#">Clothes</a>
-          </div>
-          <div class= "pieces">
-              <div class="options">
-                  <div class="item"></div>
-                  <div class="item"></div>
-                  <div class="item"></div>
-                  <div class="item"></div>
-                  <div class="item"></div>
-              </div>
-              <div class="options">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-              </div>
-              <div class="options">
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-              </div>
-          </div>
-          <div class="avatar">
-              <div class="imagen">
-                  <img src="../img/icono-descarga.svg" width="10px" height="10px" alt="Download">
-              </div>
-            <a href="/world.html"> <button class="done">Done</button></a> 
-          </div>
-        </div>
-    </div>
+            <div class="your-avatar">
+                <div id = "download"><img src="/img/icono-descarga.svg"/></div>
+            </div>
+         <div id = "features">
+             <input type="radio" name="choose" id = "skins">Skins
+             <input type="radio" name="choose" id = "eyes" >Eyes
+             <input type="radio" name="choose" id = "lips">Lips
+             <input type="radio" name="choose" id = "eyebrow">Eyebrow
+             <input type="radio" name="choose" id = "hair">Hair
+             <input type="radio" name="choose" id = "clothes">Clothes
+         </div>
 </body>
 </html>
