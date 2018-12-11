@@ -1,7 +1,7 @@
 $purple:  #48387c;
 body{
-    margin: 3%;
-    padding: 1.5%;
+    margin: 1%;
+    padding: 1%;
     box-sizing: border-box;
     background: $purple;
     color: white;
@@ -12,9 +12,9 @@ body{
         .navbar{
             display: flex;
             justify-content: space-between;
-            margin: 30px 20px 10px 20px;
+            margin: auto;
             .title {
-                padding: 20px;
+                padding: 5px;
                 font-family: 'GothamRounded-Bold', Sans-Serif;
                 width: 400px;
             }
@@ -27,7 +27,7 @@ body{
                 font-size: 30px;
                 letter-spacing: 1px;
                 display: inline-block;
-                padding: 20px;
+                padding: 5px 20px;
             }
             a {
                 text-decoration: none;
@@ -42,7 +42,7 @@ body{
             display: flex;
             justify-content: space-between;
             width: 95%;
-            margin: auto;
+            margin:  100px auto;
             padding: 50px;
          
             .meetus{

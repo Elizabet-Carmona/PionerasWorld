@@ -1,0 +1,42 @@
+$purple:  #48387c;
+body{
+    margin: 1%;
+    padding: 1%;
+    box-sizing: border-box;
+    background: $purple;
+    color: white;
+   font-family: 'GothamRounded-Book', Sans-Serif;
+
+    .contain{
+
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            .title {
+                padding: 5px;
+                font-family: 'GothamRounded-Bold', Sans-Serif;
+                width: 400px;
+            }
+        }
+        .menu{
+            ul li {
+                list-style: none;
+                color: #fff;
+                font-family: 'GothamRounded-Bold', Sans-Serif;
+                font-size: 30px;
+                letter-spacing: 1px;
+                display: inline-block;
+                padding: 5px 20px;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+                &:hover {
+                    color: #a989cb;
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+}

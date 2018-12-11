@@ -5,60 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/createProfile.css">
-    <title>Create profile</title>
+    <link rel="stylesheet" href="/css/profile.css">
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>   
+    <title>Profile</title>
 </head>
 
 <body>
-    <h1>Create your profile</h1>
-    <div class="contain">
-
-        <div class="box">
-            <div class="information">
-                <form method="POST" action="">
-                    <table>
-                        <tr class="fila">
-                            <td>Full name:</td>
-                            <td><input type="text" id="name" name="name" class="space" /></td>
-                        </tr>
-                        <tr class="fila">
-                            <td>E-mail:</td>
-                            <td><input type="text" id="email" name="email" class="space"></td>
-                        </tr>
-                        <tr class="fila">
-                            <td>Password:</td>
-                            <td><input type="text" id="pass" name="pass" class="space"></td>
-                        </tr>
-                        <tr class="fila">
-                            <td>Confirm Password:</td>
-                            <td><input type="text" id="pass" name="pass" class="space"></td>
-                        </tr>
-                        <tr class="fila">
-                            <td>Country:</td>
-                            <td><select id="mySelect" onClick="llenarPaises()" name="country" class="space">
-
-                                </select></td>
-
-                        </tr>
-                        <tr class="fila">
-                            <td><span>Favorite programming<br> language</span>
-                                :</td>
-                            <td> <input type="text" id="language" name="language" class="space"></td>
-                        </tr>
-                    </table>
-                    <input type="radio" id="radio" class="radio" checked>
-                    <label for="radio">I accept <u>terms and conditions</u></label>
-                </form>
-            </div>
-
+        <div class="contain">
+                <div class="navbar">
+                    <div class="title">
+                        <a href="../world.html"> <img src="../img/logov2.svg" /></a>
+                    </div>
+                    <div class="menu">
+                        <nav>
+                            <ul>
+                                <li><a href="world.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="profile.html">My profile</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+ 
+                <div class="info-user">
+                    <div class="avatar">
+                        <div class="icon-download">
+                            <img src="img/icono-descarga.svg" width="40px" height=" 40px">
+                        </div>
+                    </div>
+                    <div class="info">
+                        Name:<br><input type="text" value="traer info" readonly> <br>
+                        Country:<br><input type="text" value="traer info" readonly> <br>
+                        Favorite language:<br><input type="text" value="traer info" readonly> <br>
+                        E-mail:<br><input type="text" value="traer info" readonly> <br>
+                        
+                    </div>
+                </div>
         </div>
-        <div class="tip">
-            <h2>Share your tip</h2>
-            <textarea class="write-tip"></textarea>
-            <a href="/avatar.html">   <button class="next"><b> next</b></button></a>
-        </div>
-    </div>
-    <script src="js/main.js"></script>
 </body>
-
 </html>
