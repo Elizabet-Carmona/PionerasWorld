@@ -109,6 +109,10 @@ body {
                 right: 78px;
                 bottom: -12px;
                 margin-bottom: 40px;
+                &:hover {
+                    background-color: #fe8cab;
+                    color: #fff;
+                }
             }
             .write-tip {
                 width: 280px;

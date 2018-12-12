@@ -117,6 +117,10 @@ body .contain .tip .next {
   bottom: -12px;
   margin-bottom: 40px;
 }
+body .contain .tip .next:hover {
+  background-color: #fe8cab;
+  color: #fff;
+}
 body .contain .tip .write-tip {
   width: 280px;
   height: 150px;
