@@ -91,22 +91,18 @@ body .contain .main .tip h1 {
   padding: 0.5em;
   margin-top: 6%;
 }
-body .contain .main .tip .avatar {
-  padding: 1%;
+body .contain .main .tip .avatar .write-tip {
+  padding: 3%;
+  font-size: 14px;
+  color: #48387c;
   margin: auto;
   display: inline-block;
-  width: 360px;
-  background: #fff;
-  height: 200px;
-  border-radius: 35px;
-}
-body .contain .main .tip .avatar .canvas {
-  padding: 1%;
-  margin: auto;
-  display: inline-block;
+  resize: none;
   width: 360px;
   height: 200px;
   border-radius: 35px;
+  outline: none;
+  border: none;
 }
 body .contain .main .tip .done {
   padding: 10px;

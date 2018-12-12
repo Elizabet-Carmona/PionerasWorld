@@ -95,20 +95,19 @@ body{
                     margin-top: 6%;
                 }
                 .avatar{
-                    padding: 1%;
-                    margin: auto;
-                    display: inline-block;
-                    width: 360px;
-                    background: #fff;
-                    height: 200px;
-                    border-radius: 35px;
-                    .canvas{
-                        padding: 1%;
+                   
+                    .write-tip{
+                        padding: 3%;
+                        font-size: 14px;
+                        color: $purple;
                         margin: auto;
                         display: inline-block;
+                        resize: none;
                         width: 360px;
                         height: 200px;
                         border-radius: 35px;
+                        outline: none;
+                        border: none;
                     }
                 }
                 .done{
