@@ -35,5 +35,5 @@ function show() {
     document.getElementById("pop-up").style.display = "block";
   }
   function hide() {
-    document.getElementById("close").style.display = "none";
+    document.getElementById("pop-up").style.display = "none";
   }

@@ -149,10 +149,10 @@ body .contain .tip .next {
   right: 78px;
   bottom: -12px;
   margin-bottom: 40px;
-  outline: none;
 }
 body .contain .tip .next:hover {
-  background-color: #05eedf;
+  background-color: #fe8cab;
+  color: #fff;
 }
 
 /*# sourceMappingURL=createProfile.css.map */
