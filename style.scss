@@ -91,6 +91,11 @@ body.intro {
             border-radius: 12px;
             font-family: 'GothamRounded-Bold';
             border: none;
+            cursor: pointer;
+            &:hover {
+                background-color: #fe8cab;
+                color: #fff;
+            }
         }
         h4 {
             color: #332572;
@@ -109,6 +114,7 @@ body.intro {
         right: 0;
         left: 0;
         margin: 0 20px;
+        text-align: justify;
         @media (max-width: 850px) {
             flex-wrap: wrap;
             position: relative;
@@ -353,7 +359,7 @@ body.world-page {
             }
             .info-popup {
                 position: relative;
-                padding: 20px 20px;
+                padding: 22px 20px;
                 overflow: visible;
             }
             .profile-user {
