@@ -135,6 +135,7 @@ body .contain .tip .write-tip {
   color: #48387c;
 }
 body .contain .tip .next {
+  outline: none;
   font-size: 20px;
   color: #48387c;
   background-color: #00ffc2;
@@ -152,6 +153,7 @@ body .contain .tip .next {
   outline: none;
 }
 body .contain .tip .next:hover {
+  outline: none;
   background-color: #fe8cab;
   color: #fff;
 }

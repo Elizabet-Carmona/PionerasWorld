@@ -44,9 +44,9 @@ body .contain .main {
   margin: 1% auto;
 }
 body .contain .main .info-user {
-  padding: 5%;
+  padding: 5% 1%;
   display: flex;
-  width: 55%;
+  width: 60%;
 }
 body .contain .main .info-user .avatar {
   padding: 1%;
@@ -68,7 +68,7 @@ body .contain .main .info-user .info {
   font-family: "GothamRounded-Bold", Sans-Serif;
   display: inline-block;
   padding: 5% 20px;
-  margin: 10% 1%;
+  margin: 10% 0%;
   width: 40%;
 }
 body .contain .main .info-user .info .space {
@@ -84,7 +84,7 @@ body .contain .main .info-user .info .space {
 body .contain .main .tip {
   padding: 5%;
   width: 43%;
-  text-align: left;
+  text-align: center;
 }
 body .contain .main .tip h1 {
   font-size: 45px;
