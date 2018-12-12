@@ -1,0 +1,125 @@
+body {
+  margin: 1%;
+  padding: 1%;
+  box-sizing: border-box;
+  background: #48387c;
+  color: white;
+  font-family: "GothamRounded-Book", Sans-Serif;
+}
+body .contain {
+  width: 100%;
+}
+body .contain .navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+body .contain .navbar .title {
+  padding: 5px;
+  font-family: "GothamRounded-Bold", Sans-Serif;
+  width: 400px;
+}
+body .contain .menu ul li {
+  list-style: none;
+  color: #fff;
+  font-family: "GothamRounded-Bold", Sans-Serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 5px 20px;
+}
+body .contain .menu a {
+  text-decoration: none;
+  color: #fff;
+}
+body .contain .menu a:hover {
+  color: #a989cb;
+  text-decoration: line-through;
+}
+body .contain .main {
+  width: 98%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+  margin: 1% auto;
+}
+body .contain .main .info-user {
+  padding: 5%;
+  display: flex;
+  width: 55%;
+}
+body .contain .main .info-user .avatar {
+  padding: 1%;
+  margin: 5%;
+  display: inline-block;
+  width: 360px;
+  background: #fff;
+  height: 380px;
+  border-radius: 35px;
+  display: flex;
+  align-items: flex-end;
+}
+body .contain .main .info-user .avatar .icon-download {
+  padding: 25px;
+}
+body .contain .main .info-user .info {
+  letter-spacing: 1.3px;
+  font-size: 25px;
+  font-family: "GothamRounded-Bold", Sans-Serif;
+  display: inline-block;
+  padding: 5% 20px;
+  margin: 10% 1%;
+  width: 40%;
+}
+body .contain .main .info-user .info .space {
+  font-family: "GothamRounded-Book", Sans-Serif;
+  border: 0;
+  color: #fff;
+  outline: none;
+  background-color: #48387c;
+  width: 100%;
+  padding: 5px;
+  font-size: 20px;
+}
+body .contain .main .tip {
+  padding: 5%;
+  width: 43%;
+  text-align: left;
+}
+body .contain .main .tip h1 {
+  font-size: 45px;
+  padding: 0.5em;
+  margin-top: 6%;
+}
+body .contain .main .tip .avatar {
+  padding: 1%;
+  margin: auto;
+  display: inline-block;
+  width: 360px;
+  background: #fff;
+  height: 200px;
+  border-radius: 35px;
+}
+body .contain .main .tip .avatar .canvas {
+  padding: 1%;
+  margin: auto;
+  display: inline-block;
+  width: 360px;
+  height: 200px;
+  border-radius: 35px;
+}
+body .contain .main .tip .done {
+  padding: 10px;
+  font-size: 25px;
+  color: #48387c;
+  background-color: #00ffc2;
+  font-family: "GothamRounded-Bold", Sans-Serif;
+  border-radius: 15px;
+  width: 120px;
+  height: 50px;
+  border: none;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=profile.css.map */
