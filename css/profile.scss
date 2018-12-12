@@ -45,9 +45,9 @@ body{
             padding: 1%;
             margin: 1% auto;
             .info-user{
-                padding: 5%;
+                padding: 5% 1%;
                 display: flex;
-                width: 55%;
+                width: 60%;
                 .avatar{
                     padding: 1%;
                     margin: 5%;
@@ -69,7 +69,7 @@ body{
                     font-family: 'GothamRounded-Bold', Sans-Serif;
                     display: inline-block;
                     padding: 5% 20px;
-                    margin: 10% 1%;
+                    margin: 10% 0%;
                     width: 40%;
                     .space{
                         font-family: 'GothamRounded-Book', Sans-Serif;
@@ -87,9 +87,8 @@ body{
             .tip{
                 padding: 5%;
                 width: 43%;
-                text-align: left;
+                text-align: center;
                 h1{
-                    
                     font-size: 45px;
                     padding: .5em;
                     margin-top: 6%;

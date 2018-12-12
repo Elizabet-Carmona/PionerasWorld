@@ -135,6 +135,7 @@ body {
                 color: #48387c;
             }
             .next {
+                outline: none;
                 font-size: 20px;
                 color: #48387c;
                 background-color: #00ffc2;
@@ -150,6 +151,7 @@ body {
                 bottom: -12px;
                 margin-bottom: 40px;
                 &:hover {
+                    outline: none;
                     background-color: #fe8cab;
                     color: #fff;
                 }
