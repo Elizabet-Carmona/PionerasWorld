@@ -58,19 +58,17 @@ body{
             }
             .info{
                 display: flex;
-              
                 text-align: center;
-
                 margin: 0px 20px;
                 width: 65%;
                 .photo{
+                    width: 100%;
                     align-self: center;
                     padding: 20px;
                     padding-top:0px; 
                     margin: auto 5px;
-                    .img{
-                        width: 100px;
-                      
+                    img{
+                        text-align: center;
                     }
                     .text{
                         text-align: center;

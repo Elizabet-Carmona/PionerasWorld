@@ -56,13 +56,14 @@ body .contain .main .info {
   width: 65%;
 }
 body .contain .main .info .photo {
+  width: 100%;
   align-self: center;
   padding: 20px;
   padding-top: 0px;
   margin: auto 5px;
 }
-body .contain .main .info .photo .img {
-  width: 100px;
+body .contain .main .info .photo img {
+  text-align: center;
 }
 body .contain .main .info .photo .text {
   text-align: center;
