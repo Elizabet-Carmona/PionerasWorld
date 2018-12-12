@@ -1,10 +1,37 @@
 body {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  margin: 1%;
+  padding: 1%;
   background: #48387c;
   color: white;
   font-family: Gotham Rounded;
+}
+body .navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+body .navbar .title {
+  padding: 5px;
+  font-family: "GothamRounded-Bold", Sans-Serif;
+  width: 400px;
+}
+body .menu ul li {
+  list-style: none;
+  color: #fff;
+  font-family: "GothamRounded-Bold", Sans-Serif;
+  font-size: 30px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 5px 20px;
+}
+body .menu a {
+  text-decoration: none;
+  color: #fff;
+}
+body .menu a:hover {
+  color: #a989cb;
+  text-decoration: line-through;
 }
 body h1 {
   font-size: 50px;
@@ -64,6 +91,9 @@ body .contain .box .information form table .fila .space {
   padding: 10px 10px;
   margin: 5px;
   height: 1.5em;
+  outline: none;
+  font-size: 14px;
+  color: #48387c;
 }
 body .contain .box .information form table .fila #mySelect {
   height: 36px;
@@ -93,13 +123,16 @@ body .contain .tip h2 {
   font-size: 35px;
   letter-spacing: 0.5px;
 }
-body .contain .tip .img {
-  padding: 15px;
-  border-radius: 20px;
-  width: 200px;
-  background: #f2f2f2;
-  height: 100px;
-  margin: 10px auto;
+body .contain .tip .write-tip {
+  outline: none;
+  font-size: 14px;
+  width: 280px;
+  height: 150px;
+  resize: none;
+  border-radius: 30px;
+  border: none;
+  padding: 15px 15px;
+  color: #48387c;
 }
 body .contain .tip .next {
   font-size: 20px;
@@ -116,6 +149,7 @@ body .contain .tip .next {
   right: 78px;
   bottom: -12px;
   margin-bottom: 40px;
+  outline: none;
 }
 body .contain .tip .next:hover {
   background-color: #fe8cab;
