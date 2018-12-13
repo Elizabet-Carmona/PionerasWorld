@@ -176,15 +176,18 @@ body.intro {
 .title {
     font-family: 'GothamRounded-Bold', Sans-Serif;
     font-size: 24px;
-    padding: 10px;
+    padding: 30px;
     margin: 5px auto;
     text-align: left;
 }
 
+
 .simple-text {
+
     font-family: 'GothamRounded-Book', Sans-Serif;
     font-size: 24px;
 }
+<<<<<<< HEAD
 
 /* estilos de world */
 
@@ -558,6 +561,20 @@ body.avatar {
                 display: none;
             }
         }
+=======
+body{
+    background-color:  #332572;
+   
+      }
+.container{
+    font-size: 19px;
+    font-family: GothamRounded-Bold;
+    text-align: 50%;
+    margin-left: 30%;
+    margin-right:auto;
+    height: 400%;
+}
+>>>>>>> 71755e56fe21e095260e07c25352cb4fbd4bb8e7
 
         @for $i from 1 through 9{
             &[avatar-boca='#{$i}']{
