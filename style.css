@@ -87,6 +87,11 @@ body.intro .container .boton {
   border-radius: 12px;
   font-family: "GothamRounded-Bold";
   border: none;
+  cursor: pointer;
+}
+body.intro .container .boton:hover {
+  background-color: #fe8cab;
+  color: #fff;
 }
 body.intro .container h4 {
   color: #332572;
@@ -104,6 +109,7 @@ body.intro .info-intro {
   right: 0;
   left: 0;
   margin: 0 20px;
+  text-align: justify;
 }
 @media (max-width: 850px) {
   body.intro .info-intro {
@@ -333,15 +339,78 @@ body.world-page .container-plane #pop-up {
   z-index: 4;
   background-color: #fff;
   width: 370px;
-  height: 390px;
+  height: 430px;
   border-radius: 30px;
-  top: -50px;
+  top: -80px;
 }
 body.world-page .container-plane #pop-up #close {
   width: 70px;
   right: -20px;
   position: absolute;
   top: -20px;
+  z-index: 3;
+}
+body.world-page .container-plane #pop-up #close:hover {
+  cursor: pointer;
+}
+body.world-page .container-plane #pop-up .info-popup {
+  position: relative;
+  padding: 22px 20px;
+  overflow: visible;
+}
+body.world-page .container-plane #pop-up .profile-user {
+  display: flex;
+}
+body.world-page .container-plane #pop-up .profile-user .the-avatar {
+  width: 160px;
+  height: 180px;
+}
+body.world-page .container-plane #pop-up .profile-user .data {
+  margin-left: 10px;
+}
+body.world-page .container-plane #pop-up .profile-user h4 {
+  margin: 0 0;
+  color: #332572;
+  font-family: "GothamRounded-Bold", Sans-Serif;
+  font-size: 14px;
+}
+body.world-page .container-plane #pop-up .profile-user span {
+  font-family: "GothamRounded-Book", Sans-Serif;
+  font-size: 12px;
+}
+body.world-page .container-plane #pop-up .data-tip h4 {
+  margin: 0 0;
+  color: #332572;
+  font-family: "GothamRounded-Bold", Sans-Serif;
+  font-size: 14px;
+}
+body.world-page .container-plane #pop-up .data-tip span {
+  font-family: "GothamRounded-Book", Sans-Serif;
+  font-size: 12px;
+}
+body.world-page .container-plane #pop-up textarea.area {
+  border-radius: 5px;
+  border-color: #a989cb;
+  width: 320px;
+  height: 50px;
+  margin-top: 10px;
+  padding: 2px 4px;
+}
+body.world-page .container-plane #pop-up button#send {
+  background-color: #00ffc2;
+  border: none;
+  font-size: 30px;
+  font-family: "GothamRounded-Bold", Sans-Serif;
+  color: #241c3e;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 6px 16px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+body.world-page .container-plane #pop-up button#send:hover {
+  background-color: #fe8cab;
+  color: #fff;
 }
 body.world-page .container-plane button#meet {
   position: absolute;
@@ -451,6 +520,7 @@ body.avatar {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
+  font-family: "GothamRounded-Bold", Sans-Serif;
 }
 body.avatar h1 {
   color: #fff;
@@ -470,21 +540,206 @@ body.avatar .your-avatar {
   background-color: #fff;
   position: relative;
 }
-body.avatar .your-avatar img {
-  width: 50px;
-  position: absolute;
-  left: 12px;
-  bottom: 10px;
-}
-body.avatar .your-avatar #Capa_1 {
+body.avatar .your-avatar #avatar {
   width: 290px;
   height: 280px;
   top: 5px;
   position: absolute;
 }
+body.avatar .your-avatar #avatar > path, body.avatar .your-avatar #avatar > g {
+  display: none;
+}
+body.avatar .your-avatar[avatar-boca="1"] #boca1 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-ojos="1"] #ojos1 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-cejas="1"] #cejas1 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-cabello="1"] #cabello1 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-ropa="1"] #ropa1 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-piel="1"] #piel1 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-boca="2"] #boca2 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-ojos="2"] #ojos2 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-cejas="2"] #cejas2 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-cabello="2"] #cabello2 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-ropa="2"] #ropa2 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-piel="2"] #piel2 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-boca="3"] #boca3 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-ojos="3"] #ojos3 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-cejas="3"] #cejas3 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-cabello="3"] #cabello3 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-ropa="3"] #ropa3 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-piel="3"] #piel3 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-boca="4"] #boca4 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-ojos="4"] #ojos4 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-cejas="4"] #cejas4 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-cabello="4"] #cabello4 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-ropa="4"] #ropa4 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-piel="4"] #piel4 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-boca="5"] #boca5 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-ojos="5"] #ojos5 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-cejas="5"] #cejas5 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-cabello="5"] #cabello5 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-ropa="5"] #ropa5 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-piel="5"] #piel5 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-boca="6"] #boca6 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-ojos="6"] #ojos6 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-cejas="6"] #cejas6 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-cabello="6"] #cabello6 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-ropa="6"] #ropa6 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-piel="6"] #piel6 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-boca="7"] #boca7 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-ojos="7"] #ojos7 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-cejas="7"] #cejas7 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-cabello="7"] #cabello7 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-ropa="7"] #ropa7 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-piel="7"] #piel7 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-boca="8"] #boca8 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-ojos="8"] #ojos8 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-cejas="8"] #cejas8 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-cabello="8"] #cabello8 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-ropa="8"] #ropa8 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-piel="8"] #piel8 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-boca="9"] #boca9 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-ojos="9"] #ojos9 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-cejas="9"] #cejas9 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-cabello="9"] #cabello9 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-ropa="9"] #ropa9 {
+  display: block;
+}
+body.avatar .your-avatar[avatar-piel="9"] #piel9 {
+  display: block;
+}
 body.avatar .your-avatar #features input {
   display: none;
   color: #fff;
+}
+body.avatar .avatar-controles label {
+  width: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #FFF;
+}
+body.avatar .avatar-controles button {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100px;
+  width: 100px;
+  background-color: #FFF;
+  border-radius: 30px;
+  margin: 10px;
+  border: none;
+  color: transparent;
+}
+body.avatar .avatar-controles button:hover {
+  cursor: pointer;
+  background-color: #F1f1f1;
+}
+body.avatar img.download {
+  width: 50px;
+  position: absolute;
+  margin: -52px 0px 0px 3px;
 }
 
 /*# sourceMappingURL=style.css.map */
