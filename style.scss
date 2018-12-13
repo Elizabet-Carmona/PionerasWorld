@@ -26,8 +26,8 @@ body.intro {
     background-color: #332572;
     padding: 0;
     max-width: 1200px;
-    .container {
-        display: block;
+    #container {
+        display: none;
         position: absolute;
         top: 80px;
         bottom: 0;
@@ -46,20 +46,7 @@ body.intro {
         z-index: 3;
         background-color: #fff;
         animation: 5s desaparecer cubic-bezier(.39, .58, .57, 1);
-        @keyframes desaparecer {
-            0% {
-                display: none;
-                opacity: 0;
-            }
-            90% {
-                display: none;
-                opacity: 0;
-            }
-            100% {
-                display: block;
-                opacity: 1;
-            }
-        }
+        
         @media (max-width: 600px) {
             width: 300px;
             height: 400px;
@@ -152,22 +139,58 @@ body.intro {
             margin: 0 10px;
             animation: 2s bajar cubic-bezier(.46, .03, .52, .96);
             position: relative;
-            bottom: 0;
+            bottom: 50px;
             @keyframes bajar {
                 0% {
-                    bottom: 1000px;
+                    bottom: 5000px;
                     opacity: 0;
                 }
                 50% {
-                    bottom: 500px;
+                    bottom: 2500px;
                     opacity: 1;
                 }
                 100% {
-                    bottom: 0;
+                    bottom: 50px;
                     opacity: 1;
                 }
             }
         }
+
+        
+    }
+    button.start {
+        position: absolute;
+        right: 0;
+        left: 0;
+        background-color: #00ffc2;
+        border: none;
+        font-size: 30px;
+        font-family: 'GothamRounded-Bold', Sans-Serif;
+        height: 75px;
+        width: 260px;
+        border-radius: 30px;
+        color: #48387c;
+        cursor: pointer;
+        animation: 3s intro2 cubic-bezier(.95, .05, .8, .04);
+        @keyframes intro2 {
+            0% {
+                display: none;
+                opacity: 0;
+            }
+            75% {
+                display: none;
+                opacity: 0;
+            }
+            100% {
+                display: block;
+                opacity: 1;
+            }
+        }
+        &:hover {
+            background-color: #fe8cab;
+            color: #fff;
+        }
+        
     }
 }
 
@@ -541,87 +564,110 @@ body.avatar {
         justify-content: center;
         align-items: center;
     }
-    .your-avatar {
-        width: 300px;
-        height: 300px;
-        border-radius: 30px;
-        background-color: #fff;
-        position: relative;
-        #avatar {
-            width: 290px;
-            height: 280px;
-            top: 5px;
+    .container-space {
+        display: flex;
+        .your-avatar {
+            width: 300px;
+            height: 300px;
+            border-radius: 30px;
+            background-color: #fff;
+            position: relative;
+            margin-right: 30px;
+            #avatar {
+                width: 290px;
+                height: 280px;
+                top: 5px;
+                position: absolute;
+                >path,
+                >g {
+                    display: none;
+                }
+            }
+            @for $i from 1 through 9 {
+                &[avatar-boca='#{$i}'] {
+                    #boca#{$i} {
+                        display: block;
+                    }
+                }
+                &[avatar-ojos='#{$i}'] {
+                    #ojos#{$i} {
+                        display: block;
+                    }
+                }
+                &[avatar-cejas='#{$i}'] {
+                    #cejas#{$i} {
+                        display: block;
+                    }
+                }
+                &[avatar-cabello='#{$i}'] {
+                    #cabello#{$i} {
+                        display: block;
+                    }
+                }
+                &[avatar-ropa='#{$i}'] {
+                    #ropa#{$i} {
+                        display: block;
+                    }
+                }
+                &[avatar-piel='#{$i}'] {
+                    #piel#{$i} {
+                        display: block;
+                    }
+                }
+            }
+            #features {
+                input {
+                    display: none;
+                    color: #fff;
+                }
+            }
+        }
+        .avatar-controles-container {
+            label {
+                width: 100px;
+                display: inline-block;
+                vertical-align: middle;
+                color: #FFF;
+            }
+            button {
+                display: inline-block;
+                vertical-align: middle;
+                height: 60px;
+                width: 60px;
+                background-color: #FFF;
+                border-radius: 16px;
+                margin: 5px;
+                border: none;
+                color: transparent;
+                &:hover {
+                    cursor: pointer;
+                    background-color: #F1f1f1;
+                }
+            }
+        }
+        img.download {
+            width: 50px;
             position: absolute;
-            >path,
-            >g {
-                display: none;
-            }
+            bottom: 10px;
+            left: 10px;
+            cursor: pointer;
         }
-        @for $i from 1 through 9 {
-            &[avatar-boca='#{$i}'] {
-                #boca#{$i} {
-                    display: block;
-                }
-            }
-            &[avatar-ojos='#{$i}'] {
-                #ojos#{$i} {
-                    display: block;
-                }
-            }
-            &[avatar-cejas='#{$i}'] {
-                #cejas#{$i} {
-                    display: block;
-                }
-            }
-            &[avatar-cabello='#{$i}'] {
-                #cabello#{$i} {
-                    display: block;
-                }
-            }
-            &[avatar-ropa='#{$i}'] {
-                #ropa#{$i} {
-                    display: block;
-                }
-            }
-            &[avatar-piel='#{$i}'] {
-                #piel#{$i} {
-                    display: block;
-                }
-            }
-        }
-        #features {
-            input {
-                display: none;
+        button.done {
+            background-color: #00ffc2;
+            color: #241c3e;
+            font-family: "GothamRounded-Bold", Sans-Serif;
+            padding: 12px 32px;
+            border: none;
+            font-size: 20px;
+            border-radius: 17px;
+            bottom: -69px;
+            position: absolute;
+            left: 168px;
+            cursor: pointer;
+            &:hover {
+                background-color: #fe8cab;
                 color: #fff;
             }
         }
-    }
-    .avatar-controles-container{
-        label {
-            width: 100px;
-            display: inline-block;
-            vertical-align: middle;
-            color: #FFF;
-        }
-        button {
-            display: inline-block;
-            vertical-align: middle;
-            height: 74px;
-            width: 74px;
-            background-color: #FFF;
-            border-radius: 30px;
-            margin: 5px;
-            border: none;
-            color: transparent;
-            &:hover {
-                cursor: pointer;
-                background-color: #F1f1f1;
-            }
-        }
-    }
-    img.download {
-        width: 50px;
-        position: absolute;
-        margin: -52px 0px 0px 3px;
     }
 }

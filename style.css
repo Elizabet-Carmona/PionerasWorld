@@ -17,8 +17,8 @@ body.intro {
   padding: 0;
   max-width: 1200px;
 }
-body.intro .container {
-  display: block;
+body.intro #container {
+  display: none;
   position: absolute;
   top: 80px;
   bottom: 0;
@@ -38,32 +38,18 @@ body.intro .container {
   background-color: #fff;
   animation: 5s desaparecer cubic-bezier(0.39, 0.58, 0.57, 1);
 }
-@keyframes desaparecer {
-  0% {
-    display: none;
-    opacity: 0;
-  }
-  90% {
-    display: none;
-    opacity: 0;
-  }
-  100% {
-    display: block;
-    opacity: 1;
-  }
-}
 @media (max-width: 600px) {
-  body.intro .container {
+  body.intro #container {
     width: 300px;
     height: 400px;
   }
 }
-body.intro .container h2 {
+body.intro #container h2 {
   font-family: "GothamRounded-Bold";
   color: #332572;
   font-size: 24px;
 }
-body.intro .container input {
+body.intro #container input {
   border: 1.5px solid #a989cb;
   font-size: 22px;
   width: 85%;
@@ -73,11 +59,11 @@ body.intro .container input {
   color: #bcbcb8;
 }
 @media (max-width: 600px) {
-  body.intro .container input {
+  body.intro #container input {
     width: 80%;
   }
 }
-body.intro .container .boton {
+body.intro #container .boton {
   background: #00ffc2;
   font-family: Gotham Rounded;
   color: #332572;
@@ -89,14 +75,14 @@ body.intro .container .boton {
   border: none;
   cursor: pointer;
 }
-body.intro .container .boton:hover {
+body.intro #container .boton:hover {
   background-color: #fe8cab;
   color: #fff;
 }
-body.intro .container h4 {
+body.intro #container h4 {
   color: #332572;
 }
-body.intro .container a {
+body.intro #container a {
   color: #332572;
 }
 body.intro .info-intro {
@@ -152,21 +138,54 @@ body.intro .info-intro .info-text {
   margin: 0 10px;
   animation: 2s bajar cubic-bezier(0.46, 0.03, 0.52, 0.96);
   position: relative;
-  bottom: 0;
+  bottom: 50px;
 }
 @keyframes bajar {
   0% {
-    bottom: 1000px;
+    bottom: 5000px;
     opacity: 0;
   }
   50% {
-    bottom: 500px;
+    bottom: 2500px;
     opacity: 1;
   }
   100% {
-    bottom: 0;
+    bottom: 50px;
     opacity: 1;
   }
+}
+body.intro button.start {
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: #00ffc2;
+  border: none;
+  font-size: 30px;
+  font-family: "GothamRounded-Bold", Sans-Serif;
+  height: 75px;
+  width: 260px;
+  border-radius: 30px;
+  color: #48387c;
+  cursor: pointer;
+  animation: 3s intro2 cubic-bezier(0.95, 0.05, 0.8, 0.04);
+}
+@keyframes intro2 {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  75% {
+    display: none;
+    opacity: 0;
+  }
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+body.intro button.start:hover {
+  background-color: #fe8cab;
+  color: #fff;
 }
 
 /* ejemplo letra*/
@@ -533,226 +552,237 @@ body.avatar .container-avatar {
   justify-content: center;
   align-items: center;
 }
-body.avatar .your-avatar {
+body.avatar .container-space {
+  display: flex;
+}
+body.avatar .container-space .your-avatar {
   width: 300px;
   height: 300px;
   border-radius: 30px;
   background-color: #fff;
   position: relative;
+  margin-right: 30px;
 }
-body.avatar .your-avatar #avatar {
+body.avatar .container-space .your-avatar #avatar {
   width: 290px;
   height: 280px;
   top: 5px;
   position: absolute;
 }
-body.avatar .your-avatar #avatar > path,
-body.avatar .your-avatar #avatar > g {
+body.avatar .container-space .your-avatar #avatar > path,
+body.avatar .container-space .your-avatar #avatar > g {
   display: none;
 }
-body.avatar .your-avatar[avatar-boca="1"] #boca1 {
+body.avatar .container-space .your-avatar[avatar-boca="1"] #boca1 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ojos="1"] #ojos1 {
+body.avatar .container-space .your-avatar[avatar-ojos="1"] #ojos1 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cejas="1"] #cejas1 {
+body.avatar .container-space .your-avatar[avatar-cejas="1"] #cejas1 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cabello="1"] #cabello1 {
+body.avatar .container-space .your-avatar[avatar-cabello="1"] #cabello1 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ropa="1"] #ropa1 {
+body.avatar .container-space .your-avatar[avatar-ropa="1"] #ropa1 {
   display: block;
 }
-body.avatar .your-avatar[avatar-piel="1"] #piel1 {
+body.avatar .container-space .your-avatar[avatar-piel="1"] #piel1 {
   display: block;
 }
-body.avatar .your-avatar[avatar-boca="2"] #boca2 {
+body.avatar .container-space .your-avatar[avatar-boca="2"] #boca2 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ojos="2"] #ojos2 {
+body.avatar .container-space .your-avatar[avatar-ojos="2"] #ojos2 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cejas="2"] #cejas2 {
+body.avatar .container-space .your-avatar[avatar-cejas="2"] #cejas2 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cabello="2"] #cabello2 {
+body.avatar .container-space .your-avatar[avatar-cabello="2"] #cabello2 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ropa="2"] #ropa2 {
+body.avatar .container-space .your-avatar[avatar-ropa="2"] #ropa2 {
   display: block;
 }
-body.avatar .your-avatar[avatar-piel="2"] #piel2 {
+body.avatar .container-space .your-avatar[avatar-piel="2"] #piel2 {
   display: block;
 }
-body.avatar .your-avatar[avatar-boca="3"] #boca3 {
+body.avatar .container-space .your-avatar[avatar-boca="3"] #boca3 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ojos="3"] #ojos3 {
+body.avatar .container-space .your-avatar[avatar-ojos="3"] #ojos3 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cejas="3"] #cejas3 {
+body.avatar .container-space .your-avatar[avatar-cejas="3"] #cejas3 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cabello="3"] #cabello3 {
+body.avatar .container-space .your-avatar[avatar-cabello="3"] #cabello3 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ropa="3"] #ropa3 {
+body.avatar .container-space .your-avatar[avatar-ropa="3"] #ropa3 {
   display: block;
 }
-body.avatar .your-avatar[avatar-piel="3"] #piel3 {
+body.avatar .container-space .your-avatar[avatar-piel="3"] #piel3 {
   display: block;
 }
-body.avatar .your-avatar[avatar-boca="4"] #boca4 {
+body.avatar .container-space .your-avatar[avatar-boca="4"] #boca4 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ojos="4"] #ojos4 {
+body.avatar .container-space .your-avatar[avatar-ojos="4"] #ojos4 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cejas="4"] #cejas4 {
+body.avatar .container-space .your-avatar[avatar-cejas="4"] #cejas4 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cabello="4"] #cabello4 {
+body.avatar .container-space .your-avatar[avatar-cabello="4"] #cabello4 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ropa="4"] #ropa4 {
+body.avatar .container-space .your-avatar[avatar-ropa="4"] #ropa4 {
   display: block;
 }
-body.avatar .your-avatar[avatar-piel="4"] #piel4 {
+body.avatar .container-space .your-avatar[avatar-piel="4"] #piel4 {
   display: block;
 }
-body.avatar .your-avatar[avatar-boca="5"] #boca5 {
+body.avatar .container-space .your-avatar[avatar-boca="5"] #boca5 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ojos="5"] #ojos5 {
+body.avatar .container-space .your-avatar[avatar-ojos="5"] #ojos5 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cejas="5"] #cejas5 {
+body.avatar .container-space .your-avatar[avatar-cejas="5"] #cejas5 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cabello="5"] #cabello5 {
+body.avatar .container-space .your-avatar[avatar-cabello="5"] #cabello5 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ropa="5"] #ropa5 {
+body.avatar .container-space .your-avatar[avatar-ropa="5"] #ropa5 {
   display: block;
 }
-body.avatar .your-avatar[avatar-piel="5"] #piel5 {
+body.avatar .container-space .your-avatar[avatar-piel="5"] #piel5 {
   display: block;
 }
-body.avatar .your-avatar[avatar-boca="6"] #boca6 {
+body.avatar .container-space .your-avatar[avatar-boca="6"] #boca6 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ojos="6"] #ojos6 {
+body.avatar .container-space .your-avatar[avatar-ojos="6"] #ojos6 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cejas="6"] #cejas6 {
+body.avatar .container-space .your-avatar[avatar-cejas="6"] #cejas6 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cabello="6"] #cabello6 {
+body.avatar .container-space .your-avatar[avatar-cabello="6"] #cabello6 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ropa="6"] #ropa6 {
+body.avatar .container-space .your-avatar[avatar-ropa="6"] #ropa6 {
   display: block;
 }
-body.avatar .your-avatar[avatar-piel="6"] #piel6 {
+body.avatar .container-space .your-avatar[avatar-piel="6"] #piel6 {
   display: block;
 }
-body.avatar .your-avatar[avatar-boca="7"] #boca7 {
+body.avatar .container-space .your-avatar[avatar-boca="7"] #boca7 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ojos="7"] #ojos7 {
+body.avatar .container-space .your-avatar[avatar-ojos="7"] #ojos7 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cejas="7"] #cejas7 {
+body.avatar .container-space .your-avatar[avatar-cejas="7"] #cejas7 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cabello="7"] #cabello7 {
+body.avatar .container-space .your-avatar[avatar-cabello="7"] #cabello7 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ropa="7"] #ropa7 {
+body.avatar .container-space .your-avatar[avatar-ropa="7"] #ropa7 {
   display: block;
 }
-body.avatar .your-avatar[avatar-piel="7"] #piel7 {
+body.avatar .container-space .your-avatar[avatar-piel="7"] #piel7 {
   display: block;
 }
-body.avatar .your-avatar[avatar-boca="8"] #boca8 {
+body.avatar .container-space .your-avatar[avatar-boca="8"] #boca8 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ojos="8"] #ojos8 {
+body.avatar .container-space .your-avatar[avatar-ojos="8"] #ojos8 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cejas="8"] #cejas8 {
+body.avatar .container-space .your-avatar[avatar-cejas="8"] #cejas8 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cabello="8"] #cabello8 {
+body.avatar .container-space .your-avatar[avatar-cabello="8"] #cabello8 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ropa="8"] #ropa8 {
+body.avatar .container-space .your-avatar[avatar-ropa="8"] #ropa8 {
   display: block;
 }
-body.avatar .your-avatar[avatar-piel="8"] #piel8 {
+body.avatar .container-space .your-avatar[avatar-piel="8"] #piel8 {
   display: block;
 }
-body.avatar .your-avatar[avatar-boca="9"] #boca9 {
+body.avatar .container-space .your-avatar[avatar-boca="9"] #boca9 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ojos="9"] #ojos9 {
+body.avatar .container-space .your-avatar[avatar-ojos="9"] #ojos9 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cejas="9"] #cejas9 {
+body.avatar .container-space .your-avatar[avatar-cejas="9"] #cejas9 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cabello="9"] #cabello9 {
+body.avatar .container-space .your-avatar[avatar-cabello="9"] #cabello9 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ropa="9"] #ropa9 {
+body.avatar .container-space .your-avatar[avatar-ropa="9"] #ropa9 {
   display: block;
 }
-body.avatar .your-avatar[avatar-piel="9"] #piel9 {
+body.avatar .container-space .your-avatar[avatar-piel="9"] #piel9 {
   display: block;
 }
-body.avatar .your-avatar #features input {
+body.avatar .container-space .your-avatar #features input {
   display: none;
   color: #fff;
 }
-<<<<<<< HEAD
-body.avatar .avatar-controles-container label {
-=======
-body.avatar .container-avatar .avatar-controles label {
->>>>>>> fb92d2dfbd2c0ae4567f19befdebbc7547cea0a0
+body.avatar .container-space .avatar-controles-container label {
   width: 100px;
   display: inline-block;
   vertical-align: middle;
   color: #FFF;
 }
-<<<<<<< HEAD
-body.avatar .avatar-controles-container button {
-=======
-body.avatar .container-avatar .avatar-controles button {
->>>>>>> fb92d2dfbd2c0ae4567f19befdebbc7547cea0a0
+body.avatar .container-space .avatar-controles-container button {
   display: inline-block;
   vertical-align: middle;
-  height: 74px;
-  width: 74px;
+  height: 60px;
+  width: 60px;
   background-color: #FFF;
-  border-radius: 30px;
+  border-radius: 16px;
   margin: 5px;
   border: none;
   color: transparent;
 }
-<<<<<<< HEAD
-body.avatar .avatar-controles-container button:hover {
-=======
-body.avatar .container-avatar .avatar-controles button:hover {
->>>>>>> fb92d2dfbd2c0ae4567f19befdebbc7547cea0a0
+body.avatar .container-space .avatar-controles-container button:hover {
   cursor: pointer;
   background-color: #F1f1f1;
 }
-body.avatar img.download {
+body.avatar .container-space img.download {
   width: 50px;
   position: absolute;
-  margin: -52px 0px 0px 3px;
+  bottom: 10px;
+  left: 10px;
+  cursor: pointer;
+}
+body.avatar .container-space button.done {
+  background-color: #00ffc2;
+  color: #241c3e;
+  font-family: "GothamRounded-Bold", Sans-Serif;
+  padding: 12px 32px;
+  border: none;
+  font-size: 20px;
+  border-radius: 17px;
+  bottom: -69px;
+  position: absolute;
+  left: 168px;
+  cursor: pointer;
+}
+body.avatar .container-space button.done:hover {
+  background-color: #fe8cab;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -31,6 +31,10 @@ function init() {
     });
 }
 
+function login() {
+    document.getElementById("container").style.display = "block";
+  }
+
 function show() {
     document.getElementById("pop-up").style.display = "block";
   }
