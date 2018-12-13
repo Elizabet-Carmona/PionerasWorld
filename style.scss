@@ -176,18 +176,15 @@ body.intro {
 .title {
     font-family: 'GothamRounded-Bold', Sans-Serif;
     font-size: 24px;
-    padding: 30px;
+    padding: 10px;
     margin: 5px auto;
     text-align: left;
 }
 
-
 .simple-text {
-
     font-family: 'GothamRounded-Book', Sans-Serif;
     font-size: 24px;
 }
-<<<<<<< HEAD
 
 /* estilos de world */
 
@@ -196,7 +193,6 @@ body.world-page {
     background-color: #48387c;
     margin: 0;
     padding: 0;
-    .container-world {}
     .container-menu {
         display: flex;
         justify-content: space-between;
@@ -527,7 +523,6 @@ body.world-page {
 
 /* estilos de avatar */
 
-
 body.avatar {
     background-color: #332572;
     max-width: 1200px;
@@ -557,52 +552,43 @@ body.avatar {
             height: 280px;
             top: 5px;
             position: absolute;
-            > path , > g {
+            >path,
+            >g {
                 display: none;
             }
         }
-=======
-body{
-    background-color:  #332572;
-   
-      }
-.container{
-    font-size: 19px;
-    font-family: GothamRounded-Bold;
-    text-align: 50%;
-    margin-left: 30%;
-    margin-right:auto;
-    height: 400%;
-}
->>>>>>> 71755e56fe21e095260e07c25352cb4fbd4bb8e7
-
-        @for $i from 1 through 9{
-            &[avatar-boca='#{$i}']{
-                #boca#{$i}{
+        @for $i from 1 through 9 {
+            &[avatar-boca='#{$i}'] {
+                #boca#{$i} {
                     display: block;
-                }   }
-            &[avatar-ojos='#{$i}']{
-                #ojos#{$i}{
+                }
+            }
+            &[avatar-ojos='#{$i}'] {
+                #ojos#{$i} {
                     display: block;
-                }   }
-            &[avatar-cejas='#{$i}']{
-                #cejas#{$i}{
+                }
+            }
+            &[avatar-cejas='#{$i}'] {
+                #cejas#{$i} {
                     display: block;
-                }   }
-            &[avatar-cabello='#{$i}']{
-                #cabello#{$i}{
+                }
+            }
+            &[avatar-cabello='#{$i}'] {
+                #cabello#{$i} {
                     display: block;
-                }   }
-            &[avatar-ropa='#{$i}']{
-                #ropa#{$i}{
+                }
+            }
+            &[avatar-ropa='#{$i}'] {
+                #ropa#{$i} {
                     display: block;
-                }   }
-            &[avatar-piel='#{$i}']{
-                #piel#{$i}{
+                }
+            }
+            &[avatar-piel='#{$i}'] {
+                #piel#{$i} {
                     display: block;
-                }   }
+                }
+            }
         }
-
         #features {
             input {
                 display: none;
@@ -610,14 +596,14 @@ body{
             }
         }
     }
-    .avatar-controles{
-        label{
+    .avatar-controles {
+        label {
             width: 100px;
             display: inline-block;
             vertical-align: middle;
             color: #FFF;
         }
-        button{
+        button {
             display: inline-block;
             vertical-align: middle;
             height: 100px;
@@ -627,13 +613,12 @@ body{
             margin: 10px;
             border: none;
             color: transparent;
-            &:hover{
+            &:hover {
                 cursor: pointer;
                 background-color: #F1f1f1;
             }
         }
     }
-
     img.download {
         width: 50px;
         position: absolute;

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* estilos generales */
 @font-face {
   font-family: "GothamRounded-Bold";
@@ -547,7 +546,8 @@ body.avatar .your-avatar #avatar {
   top: 5px;
   position: absolute;
 }
-body.avatar .your-avatar #avatar > path, body.avatar .your-avatar #avatar > g {
+body.avatar .your-avatar #avatar > path,
+body.avatar .your-avatar #avatar > g {
   display: none;
 }
 body.avatar .your-avatar[avatar-boca="1"] #boca1 {
@@ -744,6 +744,3 @@ body.avatar img.download {
 }
 
 /*# sourceMappingURL=style.css.map */
-=======
-@font-face{font-family:'GothamRounded-Bold';src:url("font/original_GothamRoundedBold.eot?#iefix") format("embedded-opentype"),url("font/original_GothamRoundedBold.woff") format("woff"),url("font/original_GothamRoundedBold.ttf") format("truetype"),url("font/original_GothamRoundedBold.svg") format("svg");font-weight:normal;font-style:normal}@font-face{font-family:'GothamRounded-Book';src:url("font/original_GothamRoundedBook.eot?#iefix") format("embedded-opentype"),url("font/original_GothamRoundedBook.woff") format("woff"),url("font/original_GothamRoundedBook.ttf") format("truetype"),url("font/original_GothamRoundedBook.svg") format("svg");font-weight:normal;font-style:normal}.title{font-family:'GothamRounded-Bold', Sans-Serif;font-size:24px;padding:30px;margin:5px auto;text-align:left}.simple-text{font-family:'GothamRounded-Book', Sans-Serif;font-size:24px}body{background-color:#332572}.container{font-size:19px;font-family:GothamRounded-Bold;text-align:50%;margin-left:30%;margin-right:auto;height:400%}
->>>>>>> 71755e56fe21e095260e07c25352cb4fbd4bb8e7
