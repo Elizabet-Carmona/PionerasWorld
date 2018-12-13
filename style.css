@@ -716,13 +716,21 @@ body.avatar .your-avatar #features input {
   display: none;
   color: #fff;
 }
+<<<<<<< HEAD
 body.avatar .avatar-controles-container label {
+=======
+body.avatar .container-avatar .avatar-controles label {
+>>>>>>> fb92d2dfbd2c0ae4567f19befdebbc7547cea0a0
   width: 100px;
   display: inline-block;
   vertical-align: middle;
   color: #FFF;
 }
+<<<<<<< HEAD
 body.avatar .avatar-controles-container button {
+=======
+body.avatar .container-avatar .avatar-controles button {
+>>>>>>> fb92d2dfbd2c0ae4567f19befdebbc7547cea0a0
   display: inline-block;
   vertical-align: middle;
   height: 74px;
@@ -733,7 +741,11 @@ body.avatar .avatar-controles-container button {
   border: none;
   color: transparent;
 }
+<<<<<<< HEAD
 body.avatar .avatar-controles-container button:hover {
+=======
+body.avatar .container-avatar .avatar-controles button:hover {
+>>>>>>> fb92d2dfbd2c0ae4567f19befdebbc7547cea0a0
   cursor: pointer;
   background-color: #F1f1f1;
 }
