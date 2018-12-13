@@ -715,13 +715,13 @@ body.avatar .container-avatar .your-avatar #features input {
   display: none;
   color: #fff;
 }
-body.avatar .container-avatar .avatar-controles-container label {
+body.avatar .container-avatar .avatar-controles label {
   width: 100px;
   display: inline-block;
   vertical-align: middle;
   color: #FFF;
 }
-body.avatar .container-avatar .avatar-controles-container button {
+body.avatar .container-avatar .avatar-controles button {
   display: inline-block;
   vertical-align: middle;
   height: 74px;
@@ -732,7 +732,7 @@ body.avatar .container-avatar .avatar-controles-container button {
   border: none;
   color: transparent;
 }
-body.avatar .container-avatar .avatar-controles-container button:hover {
+body.avatar .container-avatar .avatar-controles button:hover {
   cursor: pointer;
   background-color: #F1f1f1;
 }
