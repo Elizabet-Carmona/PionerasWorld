@@ -46,7 +46,6 @@ body.intro {
         z-index: 3;
         background-color: #fff;
         animation: 5s desaparecer cubic-bezier(.39, .58, .57, 1);
-        
         @media (max-width: 600px) {
             width: 300px;
             height: 400px;
@@ -155,8 +154,6 @@ body.intro {
                 }
             }
         }
-
-        
     }
     button.start {
         position: absolute;
@@ -190,7 +187,6 @@ body.intro {
             background-color: #fe8cab;
             color: #fff;
         }
-        
     }
 }
 
@@ -214,9 +210,11 @@ body.intro {
 body.world-page {
     box-sizing: border-box;
     background-color: #48387c;
-    margin: 0;
+    margin: 0 auto;;
     padding: 0;
+   
     .container-menu {
+       
         display: flex;
         justify-content: space-between;
         margin: 30px 20px 10px 20px;
@@ -559,10 +557,37 @@ body.avatar {
         font-size: 50px;
         text-align: center;
     }
+    .container-menu {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 20px 10px 20px;
+        .logo-world {
+            width: 350px;
+        }
+        .menu {
+            ul li {
+                list-style: none;
+                color: #fff;
+                font-family: 'GothamRounded-Bold', Sans-Serif;
+                font-size: 24px;
+                display: inline;
+                padding: 20px;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+                &:hover {
+                    color: #a989cb;
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
     .container-avatar {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom: 50px;
     }
     .container-space {
         display: flex;

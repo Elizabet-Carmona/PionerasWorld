@@ -1,50 +1,49 @@
 body {
-  margin: 1%;
-  padding: 1%;
   box-sizing: border-box;
   background: #48387c;
   color: white;
-  font-family: "GothamRounded-Book", Sans-Serif;
+  font-family: Gotham Rounded;
 }
-body .contain .navbar {
+body .contain {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+body .contain .container-menu {
   display: flex;
   justify-content: space-between;
-  margin: auto;
+  margin: 30px 20px 10px 20px;
 }
-body .contain .navbar .title {
-  padding: 5px;
-  font-family: "GothamRounded-Bold", Sans-Serif;
-  width: 400px;
+body .contain .container-menu .logo-world {
+  width: 350px;
 }
-body .contain .menu ul li {
+body .contain .container-menu .menu ul li {
   list-style: none;
   color: #fff;
-  font-family: "GothamRounded-Bold", Sans-Serif;
-  font-size: 30px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 5px 20px;
+  font-family: Gotham Rounded;
+  font-weight: bolder;
+  font-size: 24px;
+  display: inline;
+  padding: 20px;
 }
-body .contain .menu a {
+body .contain .container-menu .menu a {
   text-decoration: none;
   color: #fff;
 }
-body .contain .menu a:hover {
+body .contain .container-menu .menu a:hover {
   color: #a989cb;
   text-decoration: line-through;
 }
 body .contain .main {
   display: flex;
   justify-content: space-between;
-  width: 95%;
-  margin: 100px auto;
-  padding: 50px;
+  margin: 80px auto;
 }
 body .contain .main .meetus {
   font-size: 18px;
   text-align: justify;
   line-height: 1.5em;
-  width: 25%;
 }
 body .contain .main .meetus h1 {
   font-size: 40px;
@@ -53,23 +52,24 @@ body .contain .main .info {
   display: flex;
   text-align: center;
   margin: 0px 20px;
-  width: 65%;
 }
 body .contain .main .info .photo {
-  width: 100%;
   align-self: center;
   padding: 20px;
   padding-top: 0px;
-  margin: auto 5px;
 }
 body .contain .main .info .photo img {
   text-align: center;
+  width: 200px;
 }
 body .contain .main .info .photo .text {
   text-align: center;
 }
 body .contain .main .info .photo .text h3 {
   letter-spacing: 1px;
+}
+body .contain .main .info .photo .text p {
+  font-size: 14px;
 }
 body .contain .main .info .photo .text .redes img {
   width: 30px;

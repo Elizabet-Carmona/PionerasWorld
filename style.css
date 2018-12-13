@@ -206,7 +206,7 @@ body.intro button.start:hover {
 body.world-page {
   box-sizing: border-box;
   background-color: #48387c;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 body.world-page .container-menu {
@@ -547,10 +547,35 @@ body.avatar h1 {
   font-size: 50px;
   text-align: center;
 }
+body.avatar .container-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 20px 10px 20px;
+}
+body.avatar .container-menu .logo-world {
+  width: 350px;
+}
+body.avatar .container-menu .menu ul li {
+  list-style: none;
+  color: #fff;
+  font-family: "GothamRounded-Bold", Sans-Serif;
+  font-size: 24px;
+  display: inline;
+  padding: 20px;
+}
+body.avatar .container-menu .menu a {
+  text-decoration: none;
+  color: #fff;
+}
+body.avatar .container-menu .menu a:hover {
+  color: #a989cb;
+  text-decoration: line-through;
+}
 body.avatar .container-avatar {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 50px;
 }
 body.avatar .container-space {
   display: flex;

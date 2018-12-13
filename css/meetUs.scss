@@ -1,49 +1,53 @@
 $purple:  #48387c;
+$font:   Gotham Rounded;
+
 body{
-    margin: 1%;
-    padding: 1%;
+   
     box-sizing: border-box;
     background: $purple;
     color: white;
-   font-family: 'GothamRounded-Book', Sans-Serif;
+   font-family: $font;
+
 
     .contain{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
 
-        .navbar{
+        .container-menu {
             display: flex;
             justify-content: space-between;
-            margin: auto;
-            .title {
-                padding: 5px;
-                font-family: 'GothamRounded-Bold', Sans-Serif;
-                width: 400px;
+            margin: 30px 20px 10px 20px;
+            .logo-world {
+                width: 350px;
             }
-        }
-        .menu{
-            ul li {
-                list-style: none;
-                color: #fff;
-                font-family: 'GothamRounded-Bold', Sans-Serif;
-                font-size: 30px;
-                letter-spacing: 1px;
-                display: inline-block;
-                padding: 5px 20px;
-            }
-            a {
-                text-decoration: none;
-                color: #fff;
-                &:hover {
-                    color: #a989cb;
-                    text-decoration: line-through;
+            .menu {
+                ul li {
+                    list-style: none;
+                    color: #fff;
+                    font-family: $font;
+                    font-weight: bolder;
+                    font-size: 24px;
+                    display: inline;
+                    padding: 20px;
+                }
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    &:hover {
+                        color: #a989cb;
+                        text-decoration: line-through;
+                    }
                 }
             }
         }
         .main{
             display: flex;
             justify-content: space-between;
-            width: 95%;
-            margin:  100px auto;
-            padding: 50px;
+            
+            margin:  80px auto;
+          
          
             .meetus{
                 h1{
@@ -53,27 +57,31 @@ body{
 
                 text-align: justify;
                 line-height: 1.5em;
-                width: 25%;
+               
        
             }
             .info{
                 display: flex;
                 text-align: center;
                 margin: 0px 20px;
-                width: 65%;
+                
                 .photo{
-                    width: 100%;
+                   
                     align-self: center;
                     padding: 20px;
                     padding-top:0px; 
-                    margin: auto 5px;
+                    
                     img{
                         text-align: center;
+                        width: 200px;
                     }
                     .text{
                         text-align: center;
                         h3{
                             letter-spacing: 1px;
+                        }
+                        p{
+                            font-size: 14px;
                         }
                         .redes{ 
                             img{

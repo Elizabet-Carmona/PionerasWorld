@@ -4,7 +4,7 @@ body {
   box-sizing: border-box;
   background: #48387c;
   color: white;
-  font-family: "GothamRounded-Book", Sans-Serif;
+  font-family: Gotham Rounded;
 }
 body .contain {
   width: 100%;
@@ -16,13 +16,13 @@ body .contain .navbar {
 }
 body .contain .navbar .title {
   padding: 5px;
-  font-family: "GothamRounded-Bold", Sans-Serif;
+  font-family: Gotham Rounded;
   width: 400px;
 }
 body .contain .menu ul li {
   list-style: none;
   color: #fff;
-  font-family: "GothamRounded-Bold", Sans-Serif;
+  font-family: Gotham Rounded;
   font-size: 30px;
   letter-spacing: 1px;
   display: inline-block;

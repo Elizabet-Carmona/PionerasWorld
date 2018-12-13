@@ -1,4 +1,4 @@
-body {
+body.create {
   box-sizing: border-box;
   margin: 1%;
   padding: 1%;
@@ -6,63 +6,61 @@ body {
   color: white;
   font-family: Gotham Rounded;
 }
-body .navbar {
+body.create .container-menu {
   display: flex;
   justify-content: space-between;
-  margin: auto;
+  margin: 30px 20px 10px 20px;
 }
-body .navbar .title {
-  padding: 5px;
-  font-family: "GothamRounded-Bold", Sans-Serif;
-  width: 400px;
+body.create .container-menu .logo-world {
+  width: 350px;
 }
-body .menu ul li {
+body.create .container-menu .menu ul li {
   list-style: none;
   color: #fff;
-  font-family: "GothamRounded-Bold", Sans-Serif;
-  font-size: 30px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 5px 20px;
+  font-family: Gotham Rounded;
+  font-weight: bolder;
+  font-size: 24px;
+  display: inline;
+  padding: 20px;
 }
-body .menu a {
+body.create .container-menu .menu a {
   text-decoration: none;
   color: #fff;
 }
-body .menu a:hover {
+body.create .container-menu .menu a:hover {
   color: #a989cb;
   text-decoration: line-through;
 }
-body h1 {
+body.create h1 {
   font-size: 50px;
   text-align: center;
-  margin: 100px 0 0 0;
+  margin: 50px 0 0 0;
 }
 @media (max-width: 950px) {
-  body h1 {
+  body.create h1 {
     margin: 30px 0 0 0;
   }
 }
-body .contain {
+body.create .contain {
   max-width: 1000px;
   display: flex;
   justify-content: center;
   margin: 0 auto;
 }
 @media (max-width: 950px) {
-  body .contain {
+  body.create .contain {
     flex-wrap: wrap;
   }
 }
-body .contain .box .information {
+body.create .contain .box .information {
   display: inline-block;
   padding: 10px;
   margin: 0 10px;
 }
-body .contain .box .information form {
+body.create .contain .box .information form {
   padding: 15px;
 }
-body .contain .box .information form table {
+body.create .contain .box .information form table {
   font-size: 24px;
   text-align: left;
   border-collapse: separate;
@@ -70,23 +68,23 @@ body .contain .box .information form table {
   border: none;
   margin: 0 5px;
 }
-body .contain .box .information form table input {
+body.create .contain .box .information form table input {
   border: none;
   box-shadow: none;
   width: 250px;
 }
 @media (max-width: 600px) {
-  body .contain .box .information form table input {
+  body.create .contain .box .information form table input {
     width: 150px;
   }
 }
-body .contain .box .information form table .fila {
+body.create .contain .box .information form table .fila {
   margin: 10px;
 }
-body .contain .box .information form table .fila span {
+body.create .contain .box .information form table .fila span {
   font-size: 18px;
 }
-body .contain .box .information form table .fila .space {
+body.create .contain .box .information form table .fila .space {
   border-radius: 10px;
   padding: 10px 10px;
   margin: 5px;
@@ -95,35 +93,35 @@ body .contain .box .information form table .fila .space {
   font-size: 14px;
   color: #48387c;
 }
-body .contain .box .information form table .fila #mySelect {
+body.create .contain .box .information form table .fila #mySelect {
   height: 36px;
   width: 270px;
   border: none;
   box-shadow: none;
 }
 @media (max-width: 600px) {
-  body .contain .box .information form table .fila #mySelect {
+  body.create .contain .box .information form table .fila #mySelect {
     height: 36px;
     width: 170px;
   }
 }
-body .contain .box .information form .radio {
+body.create .contain .box .information form .radio {
   padding: 10px;
   margin: 2em;
   text-align: left;
 }
-body .contain .box .information form label:checked {
+body.create .contain .box .information form label:checked {
   color: #48387c;
   background-color: #48387c;
 }
-body .contain .tip {
+body.create .contain .tip {
   text-align: center;
 }
-body .contain .tip h2 {
+body.create .contain .tip h2 {
   font-size: 35px;
   letter-spacing: 0.5px;
 }
-body .contain .tip .write-tip {
+body.create .contain .tip .write-tip {
   outline: none;
   font-size: 14px;
   width: 280px;
@@ -134,7 +132,7 @@ body .contain .tip .write-tip {
   padding: 15px 15px;
   color: #48387c;
 }
-body .contain .tip .next {
+body.create .contain .tip .next {
   outline: none;
   font-size: 20px;
   color: #48387c;
@@ -151,7 +149,7 @@ body .contain .tip .next {
   bottom: -12px;
   margin-bottom: 40px;
 }
-body .contain .tip .next:hover {
+body.create .contain .tip .next:hover {
   outline: none;
   background-color: #fe8cab;
   color: #fff;

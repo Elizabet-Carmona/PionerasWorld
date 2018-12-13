@@ -1,11 +1,12 @@
 $purple:  #48387c;
+$font: Gotham Rounded;
 body{
     margin: 1%;
     padding: 1%;
     box-sizing: border-box;
     background: $purple;
     color: white;
-   font-family: 'GothamRounded-Book', Sans-Serif;
+   font-family: $font;
 
     .contain{
         width: 100%;
@@ -15,7 +16,7 @@ body{
             margin: auto;
             .title{
                 padding: 5px;
-                font-family: 'GothamRounded-Bold', Sans-Serif;
+                font-family: $font;
                 width: 400px;
             }
         }
@@ -23,7 +24,7 @@ body{
             ul li {
                 list-style: none;
                 color: #fff;
-                font-family: 'GothamRounded-Bold', Sans-Serif;
+                font-family: $font;
                 font-size: 30px;
                 letter-spacing: 1px;
                 display: inline-block;
