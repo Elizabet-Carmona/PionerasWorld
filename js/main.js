@@ -10,7 +10,7 @@ function loadJSON(callback) {
             callback(xobj.responseText);
           }
     };
-    xobj.send(null);  
+    xobj.send(null);
  }
 
 function llenarPaises() {
@@ -34,6 +34,12 @@ function init() {
 function show() {
     document.getElementById("pop-up").style.display = "block";
   }
-  function hide() {
+
+function hide() {
     document.getElementById("pop-up").style.display = "none";
-  }
+}
+
+function cambiarAvatar( parte , value){
+    attrributeHTML = 'avatar-' + parte;
+    document.querySelector('.your-avatar').setAttribute( attrributeHTML , value );
+}

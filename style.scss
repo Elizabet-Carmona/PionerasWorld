@@ -23,7 +23,7 @@ $morado-letra-boton: #241c3e;
 /* estilos de index*/
 
 body.intro {
-    background-color:#332572;
+    background-color: #332572;
     padding: 0;
     max-width: 1200px;
     .container {
@@ -524,12 +524,14 @@ body.world-page {
 
 /* estilos de avatar */
 
+
 body.avatar {
     background-color: #332572;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    font-family: "GothamRounded-Bold", Sans-Serif;
     h1 {
         color: #fff;
         font-family: 'GothamRounded-Bold', Sans-Serif;
@@ -547,23 +549,77 @@ body.avatar {
         border-radius: 30px;
         background-color: #fff;
         position: relative;
-        img {
-            width: 50px;
-            position: absolute;
-            left: 12px;
-            bottom: 10px;
-        }
-        #Capa_1 {
+        #avatar {
             width: 290px;
             height: 280px;
             top: 5px;
             position: absolute;
+            > path , > g {
+                display: none;
+            }
         }
+
+        @for $i from 1 through 9{
+            &[avatar-boca='#{$i}']{
+                #boca#{$i}{
+                    display: block;
+                }   }
+            &[avatar-ojos='#{$i}']{
+                #ojos#{$i}{
+                    display: block;
+                }   }
+            &[avatar-cejas='#{$i}']{
+                #cejas#{$i}{
+                    display: block;
+                }   }
+            &[avatar-cabello='#{$i}']{
+                #cabello#{$i}{
+                    display: block;
+                }   }
+            &[avatar-ropa='#{$i}']{
+                #ropa#{$i}{
+                    display: block;
+                }   }
+            &[avatar-piel='#{$i}']{
+                #piel#{$i}{
+                    display: block;
+                }   }
+        }
+
         #features {
             input {
                 display: none;
                 color: #fff;
             }
         }
+    }
+    .avatar-controles{
+        label{
+            width: 100px;
+            display: inline-block;
+            vertical-align: middle;
+            color: #FFF;
+        }
+        button{
+            display: inline-block;
+            vertical-align: middle;
+            height: 100px;
+            width: 100px;
+            background-color: #FFF;
+            border-radius: 30px;
+            margin: 10px;
+            border: none;
+            color: transparent;
+            &:hover{
+                cursor: pointer;
+                background-color: #F1f1f1;
+            }
+        }
+    }
+
+    img.download {
+        width: 50px;
+        position: absolute;
+        margin: -52px 0px 0px 3px;
     }
 }

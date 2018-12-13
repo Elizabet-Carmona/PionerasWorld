@@ -150,20 +150,11 @@ body .contain .tip .next {
   right: 78px;
   bottom: -12px;
   margin-bottom: 40px;
-  outline: none;
 }
 body .contain .tip .next:hover {
   outline: none;
   background-color: #fe8cab;
   color: #fff;
-}
-body .contain .tip .write-tip {
-  width: 280px;
-  height: 150px;
-  border-radius: 30px;
-  border: none;
-  padding: 15px 15px;
-  color: #48387c;
 }
 
 /*# sourceMappingURL=createProfile.css.map */
