@@ -23,7 +23,7 @@ $morado-letra-boton: #241c3e;
 /* estilos de index*/
 
 body.intro {
-    background-color:#332572;
+    background-color: #332572;
     padding: 0;
     max-width: 1200px;
     .container {
@@ -596,8 +596,7 @@ body.avatar {
             }
         }
     }
-<<<<<<< HEAD
-    .avatar-controles {
+    .avatar-controles-container{
         label {
             width: 100px;
             display: inline-block;
@@ -607,11 +606,11 @@ body.avatar {
         button {
             display: inline-block;
             vertical-align: middle;
-            height: 100px;
-            width: 100px;
+            height: 74px;
+            width: 74px;
             background-color: #FFF;
             border-radius: 30px;
-            margin: 10px;
+            margin: 5px;
             border: none;
             color: transparent;
             &:hover {
@@ -626,6 +625,3 @@ body.avatar {
         margin: -52px 0px 0px 3px;
     }
 }
-=======
-}
->>>>>>> f28a3c48f31272d6af69ecc5ba8b894826cfdda5
