@@ -5,7 +5,8 @@ body {
   font-family: Gotham Rounded;
 }
 body .contain {
-  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 body .contain .container-menu {
   display: flex;
@@ -33,27 +34,35 @@ body .contain .container-menu .menu a:hover {
   text-decoration: line-through;
 }
 body .contain .main {
-  width: 98%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 1%;
-  margin: 1% auto;
+  margin: 50px auto;
+  align-items: center;
 }
 body .contain .main .info-user {
-  padding: 5% 1%;
   display: flex;
-  width: 60%;
+}
+body .contain .main .info-user .data {
+  margin-left: 10px;
+}
+body .contain .main .info-user h4 {
+  margin: 0 0;
+  color: #fff;
+  font-family: Gotham Rounded;
+  font-size: 16px;
+}
+body .contain .main .info-user span {
+  font-family: Gotham Rounded;
+  font-size: 12px;
 }
 body .contain .main .info-user .avatar {
-  padding: 1%;
-  margin: 5%;
-  display: inline-block;
-  width: 360px;
-  background: #fff;
-  height: 380px;
-  border-radius: 35px;
-  display: flex;
-  align-items: flex-end;
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  background-color: #fff;
+  position: relative;
+  margin-right: 30px;
 }
 body .contain .main .info-user .avatar .icon-download {
   padding: 25px;
@@ -63,9 +72,7 @@ body .contain .main .info-user .info {
   font-size: 25px;
   font-family: "GothamRounded-Bold", Sans-Serif;
   display: inline-block;
-  padding: 5% 20px;
   margin: 10% 0%;
-  width: 40%;
 }
 body .contain .main .info-user .info .space {
   font-family: "GothamRounded-Book", Sans-Serif;
@@ -78,14 +85,22 @@ body .contain .main .info-user .info .space {
   font-size: 20px;
 }
 body .contain .main .tip {
-  padding: 5%;
-  width: 43%;
   text-align: center;
+  margin: 0 50px;
+}
+body .contain .main .tip .write-tip {
+  outline: none;
+  font-size: 14px;
+  width: 280px;
+  height: 150px;
+  resize: none;
+  border-radius: 30px;
+  border: none;
+  padding: 15px 15px;
+  color: #48387c;
 }
 body .contain .main .tip h1 {
   font-size: 45px;
-  padding: 0.5em;
-  margin-top: 6%;
 }
 body .contain .main .tip .avatar .write-tip {
   padding: 3%;
@@ -105,13 +120,18 @@ body .contain .main .tip .done {
   font-size: 25px;
   color: #48387c;
   background-color: #00ffc2;
-  font-family: "GothamRounded-Bold", Sans-Serif;
+  font-family: Gotham Rounded;
+  font-weight: bolder;
   border-radius: 15px;
   width: 120px;
   height: 50px;
   border: none;
   margin: 10px;
   cursor: pointer;
+}
+body .contain .main .tip .done:hover {
+  background-color: #fe8cab;
+  color: #fff;
 }
 
 /*# sourceMappingURL=profile.css.map */

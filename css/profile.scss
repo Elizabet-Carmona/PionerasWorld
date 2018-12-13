@@ -1,14 +1,13 @@
-$purple:  #48387c;
+$purple: #48387c;
 $font: Gotham Rounded;
-body{
-   
+body {
     box-sizing: border-box;
     background: $purple;
     color: white;
-   font-family: $font;
-
-    .contain{
-        width: 100%;
+    font-family: $font;
+    .contain {
+        max-width: 1200px;
+        margin: 0 auto;
         .container-menu {
             display: flex;
             justify-content: space-between;
@@ -36,42 +35,47 @@ body{
                 }
             }
         }
-        .main{
-            width: 98%;
+        .main {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             padding: 1%;
-            margin: 1% auto;
-            .info-user{
-                padding: 5% 1%;
+            margin: 50px auto;
+            align-items: center;
+            .info-user {
                 display: flex;
-                width: 60%;
-                .avatar{
-                    padding: 1%;
-                    margin: 5%;
-                    display: inline-block;
-                    width: 360px;
-                    background: #fff;
-                    height: 380px;
-                    border-radius: 35px;
-                    display: flex;
-                        align-items: flex-end;
-                    .icon-download{
+                .data {
+                    margin-left: 10px;
+                }
+                h4 {
+                    margin: 0 0;
+                    color: #fff;
+                    font-family: $font;
+                    font-size: 16px;
+                }
+                span {
+                    font-family: $font;
+                    font-size: 12px;
+                }
+                .avatar {
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 30px;
+                    background-color: #fff;
+                    position: relative;
+                    margin-right: 30px;
+                    .icon-download {
                         padding: 25px;
                     }
-
                 }
-                .info{
+                .info {
                     letter-spacing: 1.3px;
                     font-size: 25px;
                     font-family: 'GothamRounded-Bold', Sans-Serif;
                     display: inline-block;
-                    padding: 5% 20px;
                     margin: 10% 0%;
-                    width: 40%;
-                    .space{
+                    .space {
                         font-family: 'GothamRounded-Book', Sans-Serif;
-                        border:0;
+                        border: 0;
                         color: #fff;
                         outline: none;
                         background-color: $purple;
@@ -81,19 +85,25 @@ body{
                     }
                 }
             }
-
-            .tip{
-                padding: 5%;
-                width: 43%;
+            .tip {
                 text-align: center;
-                h1{
-                    font-size: 45px;
-                    padding: .5em;
-                    margin-top: 6%;
+                margin: 0 50px;
+                .write-tip {
+                    outline: none;
+                    font-size: 14px;
+                    width: 280px;
+                    height: 150px;
+                    resize: none;
+                    border-radius: 30px;
+                    border: none;
+                    padding: 15px 15px;
+                    color: #48387c;
                 }
-                .avatar{
-                   
-                    .write-tip{
+                h1 {
+                    font-size: 45px;
+                }
+                .avatar {
+                    .write-tip {
                         padding: 3%;
                         font-size: 14px;
                         color: $purple;
@@ -107,20 +117,25 @@ body{
                         border: none;
                     }
                 }
-                .done{
+                .done {
                     padding: 10px;
                     font-size: 25px;
                     color: #48387c;
                     background-color: #00ffc2;
-                    font-family: 'GothamRounded-Bold', Sans-Serif;
+                    font-family: $font;
+                    font-weight: bolder;
                     border-radius: 15px;
                     width: 120px;
                     height: 50px;
                     border: none;
                     margin: 10px;
                     cursor: pointer;
+                    &:hover {
+                        background-color: #fe8cab;
+                        color: #fff;
+                    }
                 }
             }
-        } 
-    } 
+        }
+    }
 }

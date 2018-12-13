@@ -10,7 +10,7 @@
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
     <title>Profile</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="createProfile.css">
+    <link rel="stylesheet" type="text/css" href="/css/profile.css">
 </head>
 
 <body>
@@ -38,6 +38,12 @@
                     </div>
                 </div>
                 <div class="info">
+                        <div class="data">
+                                <h4>Name</h4><span>aqui va el nombre</span>
+                                <h4>Country</h4><span>aqui va el país</span>
+                                <h4>Email</h4><span>aqui va el país</span>
+                                <h4>Favorite language</h4><span>aqui va el lenguaje</span>
+                            </div>
                     <form id="form" action="">
                     <!-- Name:<br><input id="name" class="space" type="text" value="" readonly> <br>
                     Country:<br><input id="country" class="space" type="text" value="" readonly> <br>
@@ -50,11 +56,12 @@
 
             <div class="tip">
                 <h1>Edit your tip</h1>
+                <textarea maxlength="500" id="tip" class="write-tip"></textarea>
                 <div class="avatar" id="avatar">
                     <!-- <textarea id="tip" maxlength="500"  class="write-tip" value=""></textarea> -->
                 </div>
                 <br>
-                <a href="createProfile.html"><button class="done">Done</button></a>
+                <a href="world.html"><button class="done">Done</button></a>
             </div>
         </div>
     </div>
