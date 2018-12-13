@@ -1,12 +1,44 @@
 $font: Gotham Rounded;
+$btn-hover: #05eedf;
 $purple: #48387c;
 body {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 1%;
+    padding: 1%;
     background: $purple;
     color: white;
     font-family: $font;
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        .title{
+            padding: 5px;
+            font-family: 'GothamRounded-Bold', Sans-Serif;
+            width: 400px;
+        }
+    }
+    .menu{
+        ul li {
+            list-style: none;
+            color: #fff;
+            font-family: 'GothamRounded-Bold', Sans-Serif;
+            font-size: 30px;
+            letter-spacing: 1px;
+            display: inline-block;
+            padding: 5px 20px;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            &:hover {
+                color: #a989cb;
+                text-decoration: line-through;
+            }
+        }
+    }
+
     h1 {
         font-size: 50px;
         text-align: center;
@@ -23,6 +55,7 @@ body {
         @media (max-width: 950px){
             flex-wrap: wrap;
         }
+        
         .box {
             .information {
                 display: inline-block;
@@ -55,6 +88,9 @@ body {
                                 padding: 10px 10px;
                                 margin: 5px;
                                 height: 1.5em;
+                                outline: none;
+                                font-size: 14px;
+                                color: $purple;
                             }
                             #mySelect {
                                 height: 36px;
@@ -77,6 +113,7 @@ body {
                         color: $purple;
                         background-color: $purple;
                     }
+                   
                 }
             }
         }
@@ -86,15 +123,19 @@ body {
                 font-size: 35px;
                 letter-spacing: .5px;
             }
-            .img {
-                padding: 15px;
-                border-radius: 20px;
-                width: 200px;
-                background: #f2f2f2;
-                height: 100px;
-                margin: 10px auto;
+            .write-tip {
+                outline: none;
+                font-size: 14px;
+                width: 280px;
+                height: 150px;
+                resize: none;
+                border-radius: 30px;
+                border: none;
+                padding: 15px 15px;
+                color: #48387c;
             }
             .next {
+                outline: none;
                 font-size: 20px;
                 color: #48387c;
                 background-color: #00ffc2;
@@ -109,15 +150,13 @@ body {
                 right: 78px;
                 bottom: -12px;
                 margin-bottom: 40px;
+                &:hover {
+                    outline: none;
+                    background-color: #fe8cab;
+                    color: #fff;
+                }
             }
-            .write-tip {
-                width: 280px;
-                height: 150px;
-                border-radius: 30px;
-                border: none;
-                padding: 15px 15px;
-                color: #48387c;
-            }
+            
         }
     }
 }

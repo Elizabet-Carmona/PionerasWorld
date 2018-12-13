@@ -1,0 +1,128 @@
+$purple:  #48387c;
+body{
+    margin: 1%;
+    padding: 1%;
+    box-sizing: border-box;
+    background: $purple;
+    color: white;
+   font-family: 'GothamRounded-Book', Sans-Serif;
+
+    .contain{
+        width: 100%;
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            .title{
+                padding: 5px;
+                font-family: 'GothamRounded-Bold', Sans-Serif;
+                width: 400px;
+            }
+        }
+        .menu{
+            ul li {
+                list-style: none;
+                color: #fff;
+                font-family: 'GothamRounded-Bold', Sans-Serif;
+                font-size: 30px;
+                letter-spacing: 1px;
+                display: inline-block;
+                padding: 5px 20px;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+                &:hover {
+                    color: #a989cb;
+                    text-decoration: line-through;
+                }
+            }
+        }
+        .main{
+            width: 98%;
+            display: flex;
+            justify-content: space-between;
+            padding: 1%;
+            margin: 1% auto;
+            .info-user{
+                padding: 5% 1%;
+                display: flex;
+                width: 60%;
+                .avatar{
+                    padding: 1%;
+                    margin: 5%;
+                    display: inline-block;
+                    width: 360px;
+                    background: #fff;
+                    height: 380px;
+                    border-radius: 35px;
+                    display: flex;
+                        align-items: flex-end;
+                    .icon-download{
+                        padding: 25px;
+                    }
+
+                }
+                .info{
+                    letter-spacing: 1.3px;
+                    font-size: 25px;
+                    font-family: 'GothamRounded-Bold', Sans-Serif;
+                    display: inline-block;
+                    padding: 5% 20px;
+                    margin: 10% 0%;
+                    width: 40%;
+                    .space{
+                        font-family: 'GothamRounded-Book', Sans-Serif;
+                        border:0;
+                        color: #fff;
+                        outline: none;
+                        background-color: $purple;
+                        width: 100%;
+                        padding: 5px;
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .tip{
+                padding: 5%;
+                width: 43%;
+                text-align: center;
+                h1{
+                    font-size: 45px;
+                    padding: .5em;
+                    margin-top: 6%;
+                }
+                .avatar{
+                   
+                    .write-tip{
+                        padding: 3%;
+                        font-size: 14px;
+                        color: $purple;
+                        margin: auto;
+                        display: inline-block;
+                        resize: none;
+                        width: 360px;
+                        height: 200px;
+                        border-radius: 35px;
+                        outline: none;
+                        border: none;
+                    }
+                }
+                .done{
+                    padding: 10px;
+                    font-size: 25px;
+                    color: #48387c;
+                    background-color: #00ffc2;
+                    font-family: 'GothamRounded-Bold', Sans-Serif;
+                    border-radius: 15px;
+                    width: 120px;
+                    height: 50px;
+                    border: none;
+                    margin: 10px;
+                    cursor: pointer;
+                }
+            }
+        } 
+    } 
+}

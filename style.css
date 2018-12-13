@@ -15,7 +15,7 @@
 body.intro {
   background-color: #332572;
   padding: 0;
-  margin: 0;
+  max-width: 1200px;
 }
 body.intro .container {
   display: block;
@@ -87,6 +87,11 @@ body.intro .container .boton {
   border-radius: 12px;
   font-family: "GothamRounded-Bold";
   border: none;
+  cursor: pointer;
+}
+body.intro .container .boton:hover {
+  background-color: #fe8cab;
+  color: #fff;
 }
 body.intro .container h4 {
   color: #332572;
@@ -95,8 +100,6 @@ body.intro .container a {
   color: #332572;
 }
 body.intro .info-intro {
-  display: block;
-  max-width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,6 +109,7 @@ body.intro .info-intro {
   right: 0;
   left: 0;
   margin: 0 20px;
+  text-align: justify;
 }
 @media (max-width: 850px) {
   body.intro .info-intro {
@@ -329,7 +333,86 @@ body.world-page .container-plane .plane .letter .l4 {
     opacity: 1;
   }
 }
-body.world-page .container-plane button.meet {
+body.world-page .container-plane #pop-up {
+  display: none;
+  position: relative;
+  z-index: 4;
+  background-color: #fff;
+  width: 370px;
+  height: 430px;
+  border-radius: 30px;
+  top: -80px;
+}
+body.world-page .container-plane #pop-up #close {
+  width: 70px;
+  right: -20px;
+  position: absolute;
+  top: -20px;
+  z-index: 3;
+}
+body.world-page .container-plane #pop-up #close:hover {
+  cursor: pointer;
+}
+body.world-page .container-plane #pop-up .info-popup {
+  position: relative;
+  padding: 22px 20px;
+  overflow: visible;
+}
+body.world-page .container-plane #pop-up .profile-user {
+  display: flex;
+}
+body.world-page .container-plane #pop-up .profile-user .the-avatar {
+  width: 160px;
+  height: 180px;
+}
+body.world-page .container-plane #pop-up .profile-user .data {
+  margin-left: 10px;
+}
+body.world-page .container-plane #pop-up .profile-user h4 {
+  margin: 0 0;
+  color: #332572;
+  font-family: "GothamRounded-Bold", Sans-Serif;
+  font-size: 14px;
+}
+body.world-page .container-plane #pop-up .profile-user span {
+  font-family: "GothamRounded-Book", Sans-Serif;
+  font-size: 12px;
+}
+body.world-page .container-plane #pop-up .data-tip h4 {
+  margin: 0 0;
+  color: #332572;
+  font-family: "GothamRounded-Bold", Sans-Serif;
+  font-size: 14px;
+}
+body.world-page .container-plane #pop-up .data-tip span {
+  font-family: "GothamRounded-Book", Sans-Serif;
+  font-size: 12px;
+}
+body.world-page .container-plane #pop-up textarea.area {
+  border-radius: 5px;
+  border-color: #a989cb;
+  width: 320px;
+  height: 50px;
+  margin-top: 10px;
+  padding: 2px 4px;
+}
+body.world-page .container-plane #pop-up button#send {
+  background-color: #00ffc2;
+  border: none;
+  font-size: 30px;
+  font-family: "GothamRounded-Bold", Sans-Serif;
+  color: #241c3e;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 6px 16px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+body.world-page .container-plane #pop-up button#send:hover {
+  background-color: #fe8cab;
+  color: #fff;
+}
+body.world-page .container-plane button#meet {
   position: absolute;
   right: 0;
   background-color: #00ffc2;
@@ -342,7 +425,7 @@ body.world-page .container-plane button.meet {
   color: #48387c;
   cursor: pointer;
 }
-body.world-page .container-plane button.meet:hover {
+body.world-page .container-plane button#meet:hover {
   background-color: #fe8cab;
   color: #fff;
 }
@@ -380,7 +463,7 @@ body.world-page .container-map .map {
 }
 body.world-page .container-map .map2 {
   width: 60px;
-  z-index: 3;
+  z-index: 2;
   position: absolute;
   right: -30px;
   transform: rotate(15deg);
@@ -428,6 +511,49 @@ body.world-page .world {
   to {
     -webkit-transform: rotate(360deg);
   }
+}
+
+/* estilos de avatar */
+body.avatar {
+  background-color: #332572;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+body.avatar h1 {
+  color: #fff;
+  font-family: "GothamRounded-Bold", Sans-Serif;
+  font-size: 50px;
+  text-align: center;
+}
+body.avatar .container-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.avatar .your-avatar {
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  background-color: #fff;
+  position: relative;
+}
+body.avatar .your-avatar img {
+  width: 50px;
+  position: absolute;
+  left: 12px;
+  bottom: 10px;
+}
+body.avatar .your-avatar #Capa_1 {
+  width: 290px;
+  height: 280px;
+  top: 5px;
+  position: absolute;
+}
+body.avatar .your-avatar #features input {
+  display: none;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

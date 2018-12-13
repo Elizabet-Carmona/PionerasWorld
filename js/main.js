@@ -30,3 +30,10 @@ function init() {
        paises = JSON.parse(response);
     });
 }
+
+function show() {
+    document.getElementById("pop-up").style.display = "block";
+  }
+  function hide() {
+    document.getElementById("pop-up").style.display = "none";
+  }
