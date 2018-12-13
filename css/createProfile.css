@@ -1,10 +1,10 @@
 body.create {
   box-sizing: border-box;
-  margin: 1%;
-  padding: 1%;
+  max-width: 1200px;
   background: #48387c;
   color: white;
   font-family: Gotham Rounded;
+  margin: 0 auto;
 }
 body.create .container-menu {
   display: flex;

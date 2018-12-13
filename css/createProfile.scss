@@ -1,14 +1,13 @@
 $font: Gotham Rounded;
-$font2: GothamRounded-Bold;
 $btn-hover: #05eedf;
 $purple: #48387c;
 body.create {
     box-sizing: border-box;
-    margin: 1%;
-    padding: 1%;
+   max-width: 1200px;
     background: $purple;
     color: white;
     font-family: $font;
+    margin:  0 auto;
 
     .container-menu {
         display: flex;
