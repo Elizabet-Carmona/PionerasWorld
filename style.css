@@ -533,210 +533,210 @@ body.avatar .container-avatar {
   justify-content: center;
   align-items: center;
 }
-body.avatar .your-avatar {
+body.avatar .container-avatar .your-avatar {
   width: 300px;
   height: 300px;
   border-radius: 30px;
   background-color: #fff;
   position: relative;
 }
-body.avatar .your-avatar #avatar {
+body.avatar .container-avatar .your-avatar #avatar {
   width: 290px;
   height: 280px;
   top: 5px;
   position: absolute;
 }
-body.avatar .your-avatar #avatar > path, body.avatar .your-avatar #avatar > g {
+body.avatar .container-avatar .your-avatar #avatar > path, body.avatar .container-avatar .your-avatar #avatar > g {
   display: none;
 }
-body.avatar .your-avatar[avatar-boca="1"] #boca1 {
+body.avatar .container-avatar .your-avatar[avatar-boca="1"] #boca1 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ojos="1"] #ojos1 {
+body.avatar .container-avatar .your-avatar[avatar-ojos="1"] #ojos1 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cejas="1"] #cejas1 {
+body.avatar .container-avatar .your-avatar[avatar-cejas="1"] #cejas1 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cabello="1"] #cabello1 {
+body.avatar .container-avatar .your-avatar[avatar-cabello="1"] #cabello1 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ropa="1"] #ropa1 {
+body.avatar .container-avatar .your-avatar[avatar-ropa="1"] #ropa1 {
   display: block;
 }
-body.avatar .your-avatar[avatar-piel="1"] #piel1 {
+body.avatar .container-avatar .your-avatar[avatar-piel="1"] #piel1 {
   display: block;
 }
-body.avatar .your-avatar[avatar-boca="2"] #boca2 {
+body.avatar .container-avatar .your-avatar[avatar-boca="2"] #boca2 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ojos="2"] #ojos2 {
+body.avatar .container-avatar .your-avatar[avatar-ojos="2"] #ojos2 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cejas="2"] #cejas2 {
+body.avatar .container-avatar .your-avatar[avatar-cejas="2"] #cejas2 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cabello="2"] #cabello2 {
+body.avatar .container-avatar .your-avatar[avatar-cabello="2"] #cabello2 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ropa="2"] #ropa2 {
+body.avatar .container-avatar .your-avatar[avatar-ropa="2"] #ropa2 {
   display: block;
 }
-body.avatar .your-avatar[avatar-piel="2"] #piel2 {
+body.avatar .container-avatar .your-avatar[avatar-piel="2"] #piel2 {
   display: block;
 }
-body.avatar .your-avatar[avatar-boca="3"] #boca3 {
+body.avatar .container-avatar .your-avatar[avatar-boca="3"] #boca3 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ojos="3"] #ojos3 {
+body.avatar .container-avatar .your-avatar[avatar-ojos="3"] #ojos3 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cejas="3"] #cejas3 {
+body.avatar .container-avatar .your-avatar[avatar-cejas="3"] #cejas3 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cabello="3"] #cabello3 {
+body.avatar .container-avatar .your-avatar[avatar-cabello="3"] #cabello3 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ropa="3"] #ropa3 {
+body.avatar .container-avatar .your-avatar[avatar-ropa="3"] #ropa3 {
   display: block;
 }
-body.avatar .your-avatar[avatar-piel="3"] #piel3 {
+body.avatar .container-avatar .your-avatar[avatar-piel="3"] #piel3 {
   display: block;
 }
-body.avatar .your-avatar[avatar-boca="4"] #boca4 {
+body.avatar .container-avatar .your-avatar[avatar-boca="4"] #boca4 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ojos="4"] #ojos4 {
+body.avatar .container-avatar .your-avatar[avatar-ojos="4"] #ojos4 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cejas="4"] #cejas4 {
+body.avatar .container-avatar .your-avatar[avatar-cejas="4"] #cejas4 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cabello="4"] #cabello4 {
+body.avatar .container-avatar .your-avatar[avatar-cabello="4"] #cabello4 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ropa="4"] #ropa4 {
+body.avatar .container-avatar .your-avatar[avatar-ropa="4"] #ropa4 {
   display: block;
 }
-body.avatar .your-avatar[avatar-piel="4"] #piel4 {
+body.avatar .container-avatar .your-avatar[avatar-piel="4"] #piel4 {
   display: block;
 }
-body.avatar .your-avatar[avatar-boca="5"] #boca5 {
+body.avatar .container-avatar .your-avatar[avatar-boca="5"] #boca5 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ojos="5"] #ojos5 {
+body.avatar .container-avatar .your-avatar[avatar-ojos="5"] #ojos5 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cejas="5"] #cejas5 {
+body.avatar .container-avatar .your-avatar[avatar-cejas="5"] #cejas5 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cabello="5"] #cabello5 {
+body.avatar .container-avatar .your-avatar[avatar-cabello="5"] #cabello5 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ropa="5"] #ropa5 {
+body.avatar .container-avatar .your-avatar[avatar-ropa="5"] #ropa5 {
   display: block;
 }
-body.avatar .your-avatar[avatar-piel="5"] #piel5 {
+body.avatar .container-avatar .your-avatar[avatar-piel="5"] #piel5 {
   display: block;
 }
-body.avatar .your-avatar[avatar-boca="6"] #boca6 {
+body.avatar .container-avatar .your-avatar[avatar-boca="6"] #boca6 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ojos="6"] #ojos6 {
+body.avatar .container-avatar .your-avatar[avatar-ojos="6"] #ojos6 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cejas="6"] #cejas6 {
+body.avatar .container-avatar .your-avatar[avatar-cejas="6"] #cejas6 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cabello="6"] #cabello6 {
+body.avatar .container-avatar .your-avatar[avatar-cabello="6"] #cabello6 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ropa="6"] #ropa6 {
+body.avatar .container-avatar .your-avatar[avatar-ropa="6"] #ropa6 {
   display: block;
 }
-body.avatar .your-avatar[avatar-piel="6"] #piel6 {
+body.avatar .container-avatar .your-avatar[avatar-piel="6"] #piel6 {
   display: block;
 }
-body.avatar .your-avatar[avatar-boca="7"] #boca7 {
+body.avatar .container-avatar .your-avatar[avatar-boca="7"] #boca7 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ojos="7"] #ojos7 {
+body.avatar .container-avatar .your-avatar[avatar-ojos="7"] #ojos7 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cejas="7"] #cejas7 {
+body.avatar .container-avatar .your-avatar[avatar-cejas="7"] #cejas7 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cabello="7"] #cabello7 {
+body.avatar .container-avatar .your-avatar[avatar-cabello="7"] #cabello7 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ropa="7"] #ropa7 {
+body.avatar .container-avatar .your-avatar[avatar-ropa="7"] #ropa7 {
   display: block;
 }
-body.avatar .your-avatar[avatar-piel="7"] #piel7 {
+body.avatar .container-avatar .your-avatar[avatar-piel="7"] #piel7 {
   display: block;
 }
-body.avatar .your-avatar[avatar-boca="8"] #boca8 {
+body.avatar .container-avatar .your-avatar[avatar-boca="8"] #boca8 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ojos="8"] #ojos8 {
+body.avatar .container-avatar .your-avatar[avatar-ojos="8"] #ojos8 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cejas="8"] #cejas8 {
+body.avatar .container-avatar .your-avatar[avatar-cejas="8"] #cejas8 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cabello="8"] #cabello8 {
+body.avatar .container-avatar .your-avatar[avatar-cabello="8"] #cabello8 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ropa="8"] #ropa8 {
+body.avatar .container-avatar .your-avatar[avatar-ropa="8"] #ropa8 {
   display: block;
 }
-body.avatar .your-avatar[avatar-piel="8"] #piel8 {
+body.avatar .container-avatar .your-avatar[avatar-piel="8"] #piel8 {
   display: block;
 }
-body.avatar .your-avatar[avatar-boca="9"] #boca9 {
+body.avatar .container-avatar .your-avatar[avatar-boca="9"] #boca9 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ojos="9"] #ojos9 {
+body.avatar .container-avatar .your-avatar[avatar-ojos="9"] #ojos9 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cejas="9"] #cejas9 {
+body.avatar .container-avatar .your-avatar[avatar-cejas="9"] #cejas9 {
   display: block;
 }
-body.avatar .your-avatar[avatar-cabello="9"] #cabello9 {
+body.avatar .container-avatar .your-avatar[avatar-cabello="9"] #cabello9 {
   display: block;
 }
-body.avatar .your-avatar[avatar-ropa="9"] #ropa9 {
+body.avatar .container-avatar .your-avatar[avatar-ropa="9"] #ropa9 {
   display: block;
 }
-body.avatar .your-avatar[avatar-piel="9"] #piel9 {
+body.avatar .container-avatar .your-avatar[avatar-piel="9"] #piel9 {
   display: block;
 }
-body.avatar .your-avatar #features input {
+body.avatar .container-avatar .your-avatar #features input {
   display: none;
   color: #fff;
 }
-body.avatar .avatar-controles label {
+body.avatar .container-avatar .avatar-controles-container label {
   width: 100px;
   display: inline-block;
   vertical-align: middle;
   color: #FFF;
 }
-body.avatar .avatar-controles button {
+body.avatar .container-avatar .avatar-controles-container button {
   display: inline-block;
   vertical-align: middle;
-  height: 100px;
-  width: 100px;
+  height: 74px;
+  width: 74px;
   background-color: #FFF;
   border-radius: 30px;
-  margin: 10px;
+  margin: 5px;
   border: none;
   color: transparent;
 }
-body.avatar .avatar-controles button:hover {
+body.avatar .container-avatar .avatar-controles-container button:hover {
   cursor: pointer;
   background-color: #F1f1f1;
 }
-body.avatar img.download {
+body.avatar .container-avatar img.download {
   width: 50px;
   position: absolute;
   margin: -52px 0px 0px 3px;
