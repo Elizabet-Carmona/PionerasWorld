@@ -24,18 +24,28 @@ $morado-letra-boton: #241c3e;
 .title {
     font-family: 'GothamRounded-Bold', Sans-Serif;
     font-size: 24px;
-    padding: 10px;
+    padding: 30px;
     margin: 5px auto;
     text-align: left;
 }
 
+
 .simple-text {
+
     font-family: 'GothamRounded-Book', Sans-Serif;
     font-size: 24px;
 }
-
-
-
-
+body{
+    background-color:  #332572;
+   
+      }
+.container{
+    font-size: 19px;
+    font-family: GothamRounded-Bold;
+    text-align: 50%;
+    margin-left: 30%;
+    margin-right:auto;
+    height: 400%;
+}
 
 
