@@ -1,6 +1,4 @@
 body {
-  margin: 1%;
-  padding: 1%;
   box-sizing: border-box;
   background: #48387c;
   color: white;
@@ -9,30 +7,28 @@ body {
 body .contain {
   width: 100%;
 }
-body .contain .navbar {
+body .contain .container-menu {
   display: flex;
   justify-content: space-between;
-  margin: auto;
+  margin: 30px 20px 10px 20px;
 }
-body .contain .navbar .title {
-  padding: 5px;
-  font-family: Gotham Rounded;
-  width: 400px;
+body .contain .container-menu .logo-world {
+  width: 350px;
 }
-body .contain .menu ul li {
+body .contain .container-menu .menu ul li {
   list-style: none;
   color: #fff;
   font-family: Gotham Rounded;
-  font-size: 30px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 5px 20px;
+  font-weight: bolder;
+  font-size: 24px;
+  display: inline;
+  padding: 20px;
 }
-body .contain .menu a {
+body .contain .container-menu .menu a {
   text-decoration: none;
   color: #fff;
 }
-body .contain .menu a:hover {
+body .contain .container-menu .menu a:hover {
   color: #a989cb;
   text-decoration: line-through;
 }
