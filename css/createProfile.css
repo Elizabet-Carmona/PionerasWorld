@@ -1,0 +1,158 @@
+body.create {
+  box-sizing: border-box;
+  max-width: 1200px;
+  background: #48387c;
+  color: white;
+  font-family: Gotham Rounded;
+  margin: 0 auto;
+}
+body.create .container-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 20px 10px 20px;
+}
+body.create .container-menu .logo-world {
+  width: 350px;
+}
+body.create .container-menu .menu ul li {
+  list-style: none;
+  color: #fff;
+  font-family: Gotham Rounded;
+  font-weight: bolder;
+  font-size: 24px;
+  display: inline;
+  padding: 20px;
+}
+body.create .container-menu .menu a {
+  text-decoration: none;
+  color: #fff;
+}
+body.create .container-menu .menu a:hover {
+  color: #a989cb;
+  text-decoration: line-through;
+}
+body.create h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+@media (max-width: 950px) {
+  body.create h1 {
+    margin: 30px 0 0 0;
+  }
+}
+body.create .contain {
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+@media (max-width: 950px) {
+  body.create .contain {
+    flex-wrap: wrap;
+  }
+}
+body.create .contain .box .information {
+  display: inline-block;
+  padding: 10px;
+  margin: 0 10px;
+}
+body.create .contain .box .information form {
+  padding: 15px;
+}
+body.create .contain .box .information form table {
+  font-size: 24px;
+  text-align: left;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border: none;
+  margin: 0 5px;
+}
+body.create .contain .box .information form table input {
+  border: none;
+  box-shadow: none;
+  width: 250px;
+}
+@media (max-width: 600px) {
+  body.create .contain .box .information form table input {
+    width: 150px;
+  }
+}
+body.create .contain .box .information form table .fila {
+  margin: 10px;
+}
+body.create .contain .box .information form table .fila span {
+  font-size: 18px;
+}
+body.create .contain .box .information form table .fila .space {
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin: 5px;
+  height: 1.5em;
+  outline: none;
+  font-size: 14px;
+  color: #48387c;
+}
+body.create .contain .box .information form table .fila #mySelect {
+  height: 36px;
+  width: 270px;
+  border: none;
+  box-shadow: none;
+}
+@media (max-width: 600px) {
+  body.create .contain .box .information form table .fila #mySelect {
+    height: 36px;
+    width: 170px;
+  }
+}
+body.create .contain .box .information form .radio {
+  padding: 10px;
+  margin: 2em;
+  text-align: left;
+}
+body.create .contain .box .information form label:checked {
+  color: #48387c;
+  background-color: #48387c;
+}
+body.create .contain .tip {
+  text-align: center;
+}
+body.create .contain .tip h2 {
+  font-size: 35px;
+  letter-spacing: 0.5px;
+}
+body.create .contain .tip .write-tip {
+  outline: none;
+  font-size: 14px;
+  width: 280px;
+  height: 150px;
+  resize: none;
+  border-radius: 30px;
+  border: none;
+  padding: 15px 15px;
+  color: #48387c;
+}
+body.create .contain .tip .next {
+  outline: none;
+  font-size: 20px;
+  color: #48387c;
+  background-color: #00ffc2;
+  font-family: Gotham Rounded;
+  border-radius: 15px;
+  width: 120px;
+  height: 45px;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+  right: 78px;
+  bottom: -12px;
+  margin-bottom: 40px;
+}
+body.create .contain .tip .next:hover {
+  outline: none;
+  background-color: #fe8cab;
+  color: #fff;
+}
+
+/*# sourceMappingURL=createProfile.css.map */

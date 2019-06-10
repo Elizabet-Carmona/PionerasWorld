@@ -1,0 +1,160 @@
+$font: Gotham Rounded;
+$btn-hover: #05eedf;
+$purple: #48387c;
+body.create {
+    box-sizing: border-box;
+   max-width: 1200px;
+    background: $purple;
+    color: white;
+    font-family: $font;
+    margin:  0 auto;
+
+    .container-menu {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 20px 10px 20px;
+        .logo-world {
+            width: 350px;
+        }
+        .menu {
+            ul li {
+                list-style: none;
+                color: #fff;
+                font-family: $font;
+                font-weight: bolder;
+                font-size: 24px;
+                display: inline;
+                padding: 20px;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+                &:hover {
+                    color: #a989cb;
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+
+    h1 {
+        font-size: 50px;
+        text-align: center;
+        margin: 50px 0 0 0;
+        @media (max-width: 950px){
+            margin: 30px 0 0 0;
+        }
+    }
+    .contain {
+        max-width: 1000px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        @media (max-width: 950px){
+            flex-wrap: wrap;
+        }
+        
+        .box {
+            .information {
+                display: inline-block;
+                padding: 10px;
+                margin: 0 10px;
+                form {
+                    padding: 15px;
+                    table {
+                        font-size: 24px;
+                        text-align: left;
+                        border-collapse: separate;
+                        border-spacing: 2px;
+                        border: none;
+                        margin: 0 5px;
+                        input {
+                            border: none;
+                            box-shadow: none;
+                            width: 250px;
+                            @media (max-width: 600px){
+                                width: 150px;
+                            }
+                        }
+                        .fila {
+                            margin: 10px;
+                            span{
+                                font-size: 18px;
+                            }
+                            .space {
+                                border-radius: 10px;
+                                padding: 10px 10px;
+                                margin: 5px;
+                                height: 1.5em;
+                                outline: none;
+                                font-size: 14px;
+                                color: $purple;
+                            }
+                            #mySelect {
+                                height: 36px;
+                                width: 270px;
+                                border: none;
+                                box-shadow: none;
+                                @media (max-width: 600px){
+                                    height: 36px;
+                                    width: 170px;
+                                }
+                            }
+                        }
+                    }
+                    .radio {
+                        padding: 10px;
+                        margin: 2em;
+                        text-align: left;
+                    }
+                    label:checked {
+                        color: $purple;
+                        background-color: $purple;
+                    }
+                   
+                }
+            }
+        }
+        .tip {
+            text-align: center;
+            h2 {
+                font-size: 35px;
+                letter-spacing: .5px;
+            }
+            .write-tip {
+                outline: none;
+                font-size: 14px;
+                width: 280px;
+                height: 150px;
+                resize: none;
+                border-radius: 30px;
+                border: none;
+                padding: 15px 15px;
+                color: #48387c;
+            }
+            .next {
+                outline: none;
+                font-size: 20px;
+                color: #48387c;
+                background-color: #00ffc2;
+                font-family: Gotham Rounded;
+                border-radius: 15px;
+                width: 120px;
+                height: 45px;
+                border: none;
+                cursor: pointer;
+                z-index: 2;
+                position: relative;
+                right: 78px;
+                bottom: -12px;
+                margin-bottom: 40px;
+                &:hover {
+                    outline: none;
+                    background-color: #fe8cab;
+                    color: #fff;
+                }
+            }
+            
+        }
+    }
+}

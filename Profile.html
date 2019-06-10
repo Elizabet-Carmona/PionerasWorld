@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+    <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+    <title>Profile</title>
+    <link rel="stylesheet" type="text/css" href="/css/profile.css">
+</head>
+
+<body>
+    <div class="contain">
+        <div class="container-menu">
+            <div class="logo-world">
+                <a href="/world.html"> <img src="/img/logov2.svg" /></a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="world.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/profile.html">My profile</a></li>
+    
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="main">
+            <div class="info-user">
+                <div class="avatar">
+                    <div class="icon-download">
+                        <img src="img/icono-descarga.svg" width="43px" height=" 40px">
+                    </div>
+                </div>
+                <div class="info">
+                        <div class="data">
+                                <h4>Name</h4><span>aqui va el nombre</span>
+                                <h4>Country</h4><span>aqui va el país</span>
+                                <h4>Email</h4><span>aqui va el país</span>
+                                <h4>Favorite language</h4><span>aqui va el lenguaje</span>
+                            </div>
+                    <form id="form" action="">
+                    <!-- Name:<br><input id="name" class="space" type="text" value="" readonly> <br>
+                    Country:<br><input id="country" class="space" type="text" value="" readonly> <br>
+                    Favorite Language:<br><input id="language" class="space" type="text" value="" readonly> <br>
+                    E-mail:<br><input id="email" class="space" type="text" value="" readonly> <br> -->
+                    </form>
+              
+                </div>
+            </div>
+
+            <div class="tip">
+                <h1>Edit your tip</h1>
+                <textarea maxlength="500" class="write-tip"></textarea>
+                <div class="avatar" id="avatar">
+                    <!-- <textarea id="tip" maxlength="500"  class="write-tip" value=""></textarea> -->
+                </div>
+                <br>
+                <a href="world.html"><button class="done">Done</button></a>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

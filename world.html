@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pioneras World </title>
+    <link rel="stylesheet" type="text/css" media="screen" href="/style.css" />
+</head>
+<div class="mask">
+
+    <body class="world-page">
+
+        <div class="container-world">
+
+            <div class="container-menu">
+                <div class="logo-world">
+                    <a href="/world.html"> <img src="/img/logo.svg" /></a>
+                </div>
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/profile.html">My profile</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="container-map">
+                <div class="map"><img src="/img/map.svg"></div>
+                <div class="map2"><img src="/img/map.svg"></div>
+            </div>
+            <div class=container-plane>
+                <div class="plane">
+                    <img src="/img/plane.svg" />
+                    <div class="letter">
+                        <img class="l1" src="/img/letter.svg" />
+                        <img class="l2" src="/img/letter.svg" />
+                        <img class="l3" src="/img/letter.svg" />
+                        <img class="l4" src="/img/letter.svg" />
+
+                    </div>
+                </div>
+
+
+                <button id="meet" onclick="show()">Meet pioneer </button>
+                <div id="pop-up">
+                    <div id="close" onclick="hide()"><img src="/img/close.svg" /></div>
+                    <div class="info-popup">
+                        <div class="profile-user">
+                            <div class="the-avatar"></div>
+                            <div class="data">
+                                <h4>Name</h4><span>aqui va el nombre</span>
+                                <h4>Country</h4><span>aqui va el país</span>
+                                <h4>Email</h4><span>aqui va el país</span>
+                                <h4>Favorite language</h4><span>aqui va el lenguaje</span>
+                            </div>
+                        </div>
+                        <div class="data-tip">
+                            <h4>Ti of our pioneer:</h4><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </span>
+                        </div>
+                        <textarea class="area" placeholder="Comment or complement this tip, share a new one and create new knowledge"></textarea>
+                        <button id="send">Send</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="world">
+
+                <img src="/img/world.svg">
+            </div>
+        </div>
+</div>
+<script src="/js/main.js"></script>
+</body>
+
+</html>
